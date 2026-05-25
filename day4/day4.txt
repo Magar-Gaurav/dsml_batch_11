@@ -1,0 +1,35 @@
+""" Day 4 - Core Data Structures """
+
+- introduction
+- declaration and example of each data structures with proper format
+- List
+- appending on list
+- Tuple
+- Difference between list and tuple (faster and secure)
+- need of tuple in the presence of list (eg: used in bank) ### imp for interview
+- Set 
+- Dictionary
+
+(Interview prep)
+=> why to use tuple and dictionary and methods used in dictionary? 
+
+" List in details "
+-> Creating
+- using list() constructor
+- using square brackets( [] )
+- creating list inside a list (nested list (sth like that))
+- finding length of list (simple and nested one)
+- list slicing
+- reversing list (interview prep)
+- list operations:
+    -> append
+    -> extend
+    -> insert
+    -> remove
+    -> pop
+    -> clear
+    -> and others
+- Using lists as STACK
+- Using lists as QUEUE (using deque from collections to use appendleft and popleft methods)
+- Shallow copy(we just assign the list to another variable) and deep copy(we use .copy method)
+# import copy => copy.deepcopy()

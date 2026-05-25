@@ -1,0 +1,44 @@
+"""Data Types in Python"""
+Motive: 
+- Why we need to learn about datatypes?
+- Learning about numeric datatypes today
+
+Topics covered today:
+
+- Python numbers
+ => stores numeric values
+ => supports multiple numeric Types
+ => used in calculations, logic and processing
+
+- Type conversion (int to float and viceversa)
+- Arithmetic Operations
+ -> Addition (+)
+ -> Subtraction (-)
+ -> Multiplication (*)
+ -> Division (/)
+ -> Modulus(%)
+ -> Exponentiation (**)
+ -> Floor division (//)
+- (Where to use these on real life eg: floor division in finding velocity of water in river, modulus in finding even or odd)
+
+- Comparison Operator
+ -> Equal to (==)
+ -> Not Equal to (!=)
+ -> Greater than (>)
+ -> Less than (<)
+ -> Greater than or equal to ( >= )
+ -> Less than or equal to ( <= ) 
+
+- Math functions => use to perform more complex operations on numbers. abs(), ceil(), floor(), min(), max(), pow(), sqrt(), log()
+
+- Strings : sequence of characters
+          : used to store text data
+          : using single or double quotes
+    - String concatenation ( + )
+    - String Repetitio (*)
+    - Indexing and Slicing
+    - Length using len
+    - upper(), lower(), title(),
+    - strip(), replace()
+    - split(), join()
+    - endswith(), startswith()

@@ -1,0 +1,78 @@
+dheeraj => AI/ML engineer of Skill Shiksya (mentor)
+
+"""Day 1 : Introduction about the topics """ 
+
+tasks performed:
+
+introduction
+downloading python and first program ("Hello World")
+introdution to git (add, commit, push) => tracking progress day by day in github => why to use
+database (vector database) => introduction why to use => embedded
+=> need of mathematics (images of dl, nlp) => activation function
+# pip install notebook => for installing notebook
+intelcloud collab notebook
+environment
+hugging phase (store large datas)
+advantages of notebook (listing, storing, gpu and cpu provide for free and many others)
+features : (restart, run, runall, clear cell output, interactive)
+python environment
+
+# python (topics to be covered)
+=> datastructure
+    -> types
+=> looping structure (while, for)
+=> functions
+=> OOP
+
+# numpy(for mathematics) and pandas(for working with data)
+
+# matplotlib and seaborn (for data visualization)
+
+### nlp (text summarization) => summary of texts
+
+
+
+""" Day 2 Git and Github"""
+
+Introduction of Git
+Uses of Git
+Need of Git
+Importance of Git
+
+Topics to be covered: 
+- Repo
+- Commit 
+- Branch
+- Merge
+- Clone
+- Push / Pull
+
+Tasks done:
+- Created github account using google account (used daily)
+- Created a repository
+- Downloaded git lab 
+- Checked version of git (git --version)
+
+difference between ssh and hhtps
+keys used and their port address
+
+key generate and using them
+
+# important commands used
+- git add . # adds all the file from same folder 
+- git add <file name> # adds specific file 
+- git commit -m "message to send"
+- git status
+- git push -u origin <branch name>
+- git pull origin main
+- git pull origin <branch name>
+- git branch # check the git branch
+- git checkout <branch name> # changes the branch
+- git checkout -b <new-branch name> # creates new branch and check out
+- git branch -D <branch name> # removes the branch
+- git stach
+- git stash pop # push to github without updating the changes
+- git stash apply
+- git rebase # conflict remove
+
+#how to merge learn (Homework) .... 
