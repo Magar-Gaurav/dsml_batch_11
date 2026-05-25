@@ -1,0 +1,48 @@
+"""Day 5:  Tuples and Sets """
+
+= need of tuples and sets
+= Explaination of tuples
+    - features
+    - indexing
+= Creating tuples (using small brackets '()' and using tuple() constructor)
+= Printing type of tuple (using type())
+= functions of tuple:
+    - len
+    - max
+    - min
+    - sum
+    - any
+    - all
+    - sorted()
+    - tuple()
+# difference between sorted on list and tuple 
+# use of any and all 
+= packing and unpacking (where to use)
+= user of escape variable (_)
+= Tuple operations:
+    - indexing
+    - slicing
+    - concatenation
+    - repetition
+    - membership
+    - comparison
+""" 
+can we delete individuals on tuples? if not why?
+"""
+
+# Set
+= introduction
+= creation (using curly brackets and tuple constructor)
+= features:
+    - unordered
+    - unchangebale
+    - heterogenous
+    - unique
+= how to create empty set
+= set operations:
+    - union (|)
+    - intersection(&)
+    - complement ( -)
+    - symmetric difference(^)
+    - membership (in)
+    - subset (<=)
