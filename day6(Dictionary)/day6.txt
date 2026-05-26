@@ -1,0 +1,25 @@
+"""Day 6: Dictionary"""
+=also called mapping type (key and value mapping)
+= why we need it  (for large amount of data)
+= how data is stored in dictionary (json format)
+    -> id is represented as keys and data are represented as values
+= creating dictionary
+    - using curly brackets
+    - using dict() constructor
+    - using squence
+= features:
+    - unordered
+    - unchangeable
+    - heterogenous
+    - unique (no duplicated value)
+= key and value rules:
+    - values can be of any type
+    - multiple keys can have same value
+    - keys must be unique
+    - keys don't need to be string
+= accessing value:
+    - using key name
+= methods of dictionary:
+    - get() => 
+    - items()
+    - pop()
