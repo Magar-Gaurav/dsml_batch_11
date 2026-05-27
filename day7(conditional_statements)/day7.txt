@@ -1,0 +1,19 @@
+""" Day 7 - Conditon and Branching """
+
+# Conditions : definition, explaination, real life example
+             : (Sequence of Operation)
+# Branching: if-else, if-elif statements
+(Imp : Don't forget about the indendation)
+
+# If Statement
+# if...else statement
+# if...elif....else statement
+(Example of each type of statement)
+
+# Ternary Operator
+    Syntax: value_if_true if condition else value_if_false
+# Python comparison operator
+# Logical Opeartions Python Programming
+    and, or and not
+# any() function with If
+# all() function with If
