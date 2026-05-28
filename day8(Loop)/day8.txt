@@ -1,0 +1,15 @@
+"""Day 8 Loops """
+
+# While loop
+# syntax of while
+# cw: sum of 1 to 10 using while loop
+# infinite loop in while (problem)
+# real case scenario of using while loop : sending data time to time, used to track user in game(movement)
+
+# Break statement
+
+# Continue statement
+
+# Pass statement
+
+# For Loop
