@@ -1,0 +1,12 @@
+"""Day 9 Functions """
+
+# importance of indendation in function
+# syntax
+# parameter and argument : value is agrument 
+# types of functions: inbuilt_function() and user_defined_function()
+# types of functions declaration:
+    - no parameters, no return
+    - parameters, no return
+    - no parameters, has return type
+    - has parameters, has return types
+    - default parameter
