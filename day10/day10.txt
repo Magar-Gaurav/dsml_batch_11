@@ -1,0 +1,23 @@
+"""Day 10 - Function Practices and Python built-in Functions"""
+
+- two questions (practice or revision questions):
+    - Write a function that takes three numbers as arguments and return the largest number
+    - Write a function that takes a string and return the numbers of vowel present in it
+- Python built-in Functions:
+    - basic functions
+        - print : use of => (end, sep, file) : {use case of sep = "-" on date (2026-01-01)}
+        - input
+        - type
+        - len
+        - dir : return all of the methods that can be applied
+        - open : {syntax: file = open("file_name.txt",mode="open_mode") print(file) file.close()}
+            - file_open_mode:
+                - r, r+
+                - a, a+
+                - w, w+
+            # class task : Ask user for 5 numbers or inputs and then append it into the file named user_data.txt using .write() and printing using .read() {use of open or with open}
+        - enumerate
+            # class task: a list has number from 1 to 7 need index, values without using range
+            # using enumerate in list, in dictionary
+        - zip 
+        - map : (used in list and tuple datastructure)
