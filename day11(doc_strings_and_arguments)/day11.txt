@@ -1,0 +1,17 @@
+"""" Day 11 - Python doc strings and arguments(*args and **kwargs)"""
+
+# day 10 - remainings (reduce and filter)
+    # filter = used to filter specific values from the list
+             = used to get iterable with choice values
+    # reduce = used to find cumuilitive frequency or factorial using reduce keyword 
+             = need to import reduce from the functools 
+             = used for getting only one output value
+    # explaination about the functools (why we need to read it....) {documentation}
+# day 11 - starts from here
+    # docstring = explaination
+                = help() {function}
+                = .__doc__
+                = '''\n\n\n'''' => used for commenting multiple lines
+    # difference between commenting and docstring
+    # *args(stores data in  tuple) and **kwargs(stores data in dictionary)
+    # 
