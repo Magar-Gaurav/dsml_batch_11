@@ -1,0 +1,21 @@
+"""Day 12 - Lambda functions and Comprehensions """
+
+# lambda functions (also called anonymous functions)
+    - syntax:
+        ` Lambda arguments : expression `
+    - example
+    - uses
+    - using lambda inside filter, map, reduce
+    - sorting list of tuples, dictionaries using Lambda (with reverse)
+    - comparison with normal function
+    - why to use lambda function eventhough normal functions are present? 
+# when to use def and when to use lambda functions?
+
+# list Comprehension {like ternary operator}
+    - syntax
+        - normal
+        - with condition
+        - with if-else
+    - explaination
+    - example
+# dictionary comprehension 
