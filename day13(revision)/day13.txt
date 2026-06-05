@@ -1,0 +1,9 @@
+""" Day13 - Revision """
+
+# Git (how it works):
+    - steps performed:
+        - add
+        - commit
+        - status
+        - push / pull
+# done revision questions of all the topics covered till today 
