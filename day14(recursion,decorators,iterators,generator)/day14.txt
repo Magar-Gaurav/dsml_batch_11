@@ -1,0 +1,25 @@
+""" Day 14 - Decorator, Recursion, Iterators, Generator """
+
+# Recursion
+    - definition : function calling itself
+    - components:
+        - base : stops from going to infinite
+        - recursive case : main work or condition
+    - how it works
+    - class task:
+        - finding recursion
+        - finding factorial
+
+# Nested function
+    - example
+    - how we pass values in nested function
+
+# Passing function as an argument
+# Passing function as a value
+# Decorator
+    - def : function that extends or modifies the behavior of another function without chaning its source code
+    - syntax 
+    - real-world use-cases:
+        - logging
+        - authentication
+        - memoization
