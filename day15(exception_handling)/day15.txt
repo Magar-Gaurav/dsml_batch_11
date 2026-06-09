@@ -1,0 +1,27 @@
+""" Day 15 - day14 remainings (iterator and generator) AND Exception handling
+
+# Day 14 remainings
+# iterator
+    # syntax
+    # code
+    # how it works
+    # next => used to get next value
+
+# generator
+    # syntax
+    # use of yield => tell pause here and return but remember the current state of the function
+    # yield is just like lazy loader
+
+# used to execute large function or method into small small chunk {this is used to load data in server or reduce the load of server}
+# Difference between iterator and generator (IMP)
+
+# Day 15 Exception Handling
+
+# syntax
+    try:
+    except ExceptionName:
+    finally: 
+# errors (built-in) 
+# raise error
+
+# class Task for  developing ATM
