@@ -1,0 +1,24 @@
+""" Day 16: OOP """
+# class and object : A class can have multiple objects
+    # what is class and object with example
+    => class = real life enitity 
+    => object = instance of class   
+    # example of class and object
+    # attribute and methods in a class
+    # how to create an object from a class
+    # accessing attribute of a class using an object
+
+    # types of attributes in a class
+        # instance attribute => attributes created or initialized in __init__ method or (constructor) with self
+        # class attribute => attributes created or initialized inside the class not any methods; we need @classmethod to use the class instance
+
+    # types of methods in class
+        # class method => use @classmethod decorator; 
+        # instance method 
+        # static method => use @staticmethod decorator; 
+
+# things to know in class and object
+    # class with name
+    # attributes(instance, class)
+    # method (instance, class, static)
+    # object
