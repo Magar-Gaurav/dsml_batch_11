@@ -1,0 +1,21 @@
+""" Day 17 : Method overloading, Inheritance """
+
+# Method Overloading
+    # Python doesnot support traditional method overloading.
+    # Using default arguments
+    # In python OOP we use method overloading by default arguments like passing 0
+        # the default value used must be starting from the right side of the parameter or arguments
+
+# Inheritance
+    # use case
+    # types of Inheritance
+        # single  => one parent class
+        # multiple => multiple parent class
+        # multi-level => grandparent -> parent -> child format
+        # hierarchial => one parent has multiple child
+        # hybrid => combining two types of inheritance
+
+# Super class / Base class with Constructor
+# Base class
+
+# ambuigity problem => constructor size or parameters or arguments size mismatch error # use *args to resolve it
