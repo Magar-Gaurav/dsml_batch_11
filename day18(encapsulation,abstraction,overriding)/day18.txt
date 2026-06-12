@@ -1,0 +1,7 @@
+"""Day 18 Python Encapsulation, Abstraction, Overriding"""
+
+# Method Overriding
+# using parent class constructor without using super()
+# keywords(public private protected)
+# abstraction
+# encapsulation
