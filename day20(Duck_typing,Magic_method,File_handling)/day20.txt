@@ -1,0 +1,35 @@
+""" Day 20 : Duck Typing, Magic Method, File Handling """
+
+# Duck Typing
+    # Example: Create classes Esewa, Khalti and BankTransfer each having a pay(self.amount) method. Write a payment processor function that works with any payment method object.
+
+# Magic methods :
+    # __str__
+    # __rep__
+    # __len__
+    # __call__
+    # difference between __str__ and __rep__: rep is used for debugging string representation of an object whereas str is used for string that is meant to be human-readable
+
+    # Example: Create a BankAccount class and implement str() and repr() methods to display account details in user-friendly and developer-friendly formats.
+
+# File Handling:
+    # syntax: 
+        - f = open("file_name.txt","mode") # for this we need to close the file manually
+        - with open("file_name.txt","r") as f # for this we dont need to close the file manually
+    # checking type of reading text
+    # modes:
+        # r -> read
+        # a -> append
+        # w -> write
+        # x -> creates file and return error if it exists
+    # methods:
+        # .read() => reads file
+        # .write() => writes on file
+        # .readline() => reads line by line
+        # .readlines() => reads all line in list format
+        # .read().splitlines() => reads and split the file data line by line in the form of list
+
+# converting json into dictionary and viceversa
+
+# hw: finding words from web (web scrapping) and then split them sentence by sentence and store in excel file. 
+# format: serial number | sentence (save in the format of .csv)
