@@ -1,0 +1,22 @@
+""" Day 21: Build Custom Packages and Modules """
+
+# Installing build tools
+# Introduction to FastAPI
+    # usecases of FastAPI
+# UV:
+    # downloading uv
+    # initializing uv
+# difference between absolute and relative file path
+# introduction to custom module
+# module vs package
+# practice package in VS code
+# new-task : learn tkinter
+# FastAPI implementation :
+    # usecase of FastAPI
+    # installed uvicorn
+    # codes used: 
+        - python -m venv .venv
+        - .\.venv\Scripts\Activate
+    # to see the code (one of these):
+        - http://localhost/        # if you used port 80
+        - http://127.0.0.1/        # equivalent
