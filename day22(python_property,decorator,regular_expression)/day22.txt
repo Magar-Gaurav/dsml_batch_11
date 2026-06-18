@@ -1,0 +1,14 @@
+""" Day 22: Python Property Decorator Regular Expression """
+
+# python property decorator
+    # commonly using in OOP which converts methods into attributes
+    # why use property? (@property)
+    # getter : used to read a property / attribute
+    # setter : used to set a property / attribute
+
+# regular expression:
+    # first we need to import re
+    # need of regex
+    # usecase of regex
+
+# webscrapping (introduction and a simple example)
