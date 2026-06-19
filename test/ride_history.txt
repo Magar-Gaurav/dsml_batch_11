@@ -1,0 +1,22 @@
+
+
+Ride Data:
+Driver Name: Ram
+Vehicle Booked: Car
+Distance Travelled: 10.0
+Rating Provided: 5.0
+Price: Rs.400.0
+
+Ride Data:
+Driver Name: Aksjdasdkl
+Vehicle Booked: Car
+Distance Travelled: 10.0
+Rating Provided: 5
+Price: Rs.400.0
+
+Ride Data:
+Driver Name: Ram Bahadur
+Vehicle Booked: Car
+Distance Travelled: 10.0
+Rating Provided: 4
+Price: Rs.400.0
