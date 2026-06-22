@@ -21,7 +21,7 @@ class Vehicle(ABC):
         
     # fare calculation logic
     def fare_calculation(self):
-        return self.distance  * self.rate
+        return self.distance * self.rate
     
 class Bike(Vehicle):
     '''
@@ -64,3 +64,6 @@ class Car(Vehicle):
         return self.d_name,self.get_vehicle_name(),self,self.distance,self.fare_calculation()
     def calculate_fare(self):
         return self.fare_calculation()
+    
+bike = Bike("Ram","Bike",10)
+print(bike.calculate_fare())

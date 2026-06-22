@@ -1,0 +1,47 @@
+""" Day 24: Introduction to NumPy """
+
+# till we have studied about 1D data or 1D matrix form so for handling multi-dimenstional datas we need to use maxtrix for which we need to use numpy.
+# eg: nums_list = [1,2,3,4,5]
+
+# matrix 
+    # definition
+    # representation
+    # examples
+    # why we need to study matrix
+
+# NumPy
+    # definition of NumPy
+    # key-features of NumPy
+    # need of NumPy
+    # why we study NumPy
+
+# Matrix Addition and Subtraction
+     
+# Array in NumPy (also called n-d array [multi-dimensional])
+    # creating an array
+    # image is created using 2D array (usecase of 2D array)     
+    # rank
+    # shape
+
+    # rank 0 is also called scalar
+    # finding dimension (using array_name.ndim)
+    # finding row and column (using array_name.shape)
+
+# List vs Numpy Array
+# timing of list and numpy opeartions : numpy is faster
+
+# Class Task: Create a 5 x 5 matrix and see its dimension and shape
+# use of 0's and 1's is for image processing and masking
+# creating 1's and 0's in integer and float both format
+
+# while summing axis = 0 means columns whereas 1 means row
+# NumPy array creation method
+    - arange()
+    - full()
+    - linspace()
+    - diag()
+    - eye()
+    - identity()
+    # difference between eye() and identity() 
+        - eye can give both square and rectangular form
+        - identity must be on square form only
