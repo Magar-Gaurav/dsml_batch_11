@@ -1,1 +1,18 @@
 """Day 25: NumPy Array properties and Methods"""
+
+- printing shape, dimension, size and dtype of an Array (recall of yesterday)
+- Unicode string (eg: <U21)
+- reshaping array (it always takes tuple value)
+- flattening an array
+- raveling an array
+- Transpose of matrix: converting row into column and viceversa
+
+# np array methods
+- indexing and slicing
+{indexes starts with 0} 
+- sorting
+- filtering
+- masking
+- where (uses index values rather than real values)
+- conditional array
+- adding and removing data
