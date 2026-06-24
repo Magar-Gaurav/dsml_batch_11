@@ -1,0 +1,17 @@
+""" Day 26: Element-wise matrix operations and Linear Algebra """
+
+
+# Element wise opeartions
+    - Element wise addition
+    - Element wise subtraction
+    - Element wise multiplication
+        - error on matrix multiplication ( [m x n] @ [m x n] =>  here n of matrix1 and m of matrix2 should be equal)
+    - Scalar
+    - Broadcasting in NumPy
+# Linear Algebra 
+    - solving linear algebra using np.linalg.solve(mat1,mat2) (for 2,5 variables)
+    - Inverse of matrix
+    - Determinant of matrix
+    - finding slope of a matrix with constant
+    - Eigen value and eigen vectors
+    - Singular Value Decomposition(SVD)
