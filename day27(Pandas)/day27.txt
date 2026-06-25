@@ -1,0 +1,53 @@
+""" Day 27: Pandas Basics """
+
+# Pandas
+    - introduction to Pandas
+    - use cases 
+    - How datas are stored 
+        # Series : represents data in 1 dimension
+        # Data Frame : represents data in 2 dimension
+    
+    - Importing pandas
+
+    - Series
+        - Syntax of Series:
+            - pd.Series(array_name,index=[],dtype="",name="",copy=False)
+        - Converting list into Series
+        - Converting dictionary into Series
+    
+    - DataFrame
+        - Syntax of DataFrame
+            - pd.DataFrame(data = None,inde = None,columns = None, dtype = None, copy = False)
+        - converting list into DataFrame
+        - converting dictionary into DataFrame
+        - fetching specific columns data using: df_name["column_name"]
+    
+    - importing data from google drive by mounting
+    
+    - read_csv("titanic.csv")
+
+    - df.head()
+
+    - df.tail()
+
+    - df.shape
+
+    - df.columns
+
+    - df.info()
+
+    - df.describe()
+
+    - df.iloc[ : ]
+
+    - df.loc[ : ]
+
+    - df[""].count()
+
+    - selecting data with condition
+
+    - df[""].isna()
+
+    - df[""].duplicated()
+
+    - df[df[""].notna()]
