@@ -1,0 +1,19 @@
+"""Day 29: Pandas Visualization"""
+
+# why data visualization is required?
+- Introduction to Pandas Visualization
+- Importing Pandas and Matplotlib
+- Loading the Titanic dataset
+- Creating Bar Charts
+- Visualizing Survival Count
+- Comparing Male vs Female Survival using bar charts
+- Using pd.crosstab() for categorical data analysis
+- Creating Pie Charts
+- Visualizing Survival Distribution
+- Analyzing Age Distribution by Embarked Port
+- Creating Line Graphs
+- Plotting Age vs Fare
+- Creating Scatter Plots
+- Creating Histograms
+- Understanding different Data Visualization Techniques
+- Performing Exploratory Data Analysis (EDA) using visualizations
