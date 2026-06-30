@@ -1,0 +1,81 @@
+Day 30: Data Visualization + Data Manipulation
+
+# Box Plot
+    - What is a Box Plot?
+    - Why we need a Box Plot
+    - Five Number Summary
+        - Minimum
+        - Q1 (First Quartile)
+        - Median (Q2)
+        - Q3 (Third Quartile)
+        - Maximum
+    - IQR (Inter Quartile Range)
+    - Detecting Outliers
+    - Creating Box Plots using Pandas
+    - Group-wise Box Plot
+
+# Seaborn
+    - Introduction
+    - Importing Seaborn
+    - Built on top of Matplotlib
+    - Advantages of Seaborn
+    - Creating Histograms
+    - Correlation Matrix
+        eg:
+        - correlation = df.corr(numeric_only=True)
+          sns.heatmap(correlation, annot=True, cmap="jet")
+    - Covariance Matrix
+        eg:
+        - covariance = df.cov(numeric_only=True)
+          sns.heatmap(covariance, annot=True, cmap="jet")
+
+# Heatmap
+    - What is Heatmap?
+    - Visualizing Correlation
+    - Visualizing Covariance
+    - Use Cases
+        - Feature Relationship Analysis
+        - Multicollinearity Detection
+        - Confusion Matrix in Machine Learning
+
+# Measures of Central Tendency
+    - Mean
+    - Median
+    - Mode
+    - Visualizing Mean, Median and Mode on Histogram
+
+# SciPy
+    - What is SciPy?
+    - scipy.stats
+    - stats.mode()
+
+# Standard t Distribution
+    - np.random.standard_t()
+    - Random Sampling
+    - Histogram Visualization
+
+# Histogram
+    - Creating Histograms using Matplotlib
+    - Creating Histograms using Seaborn
+
+# Data Manipulation
+    - Basic idea of:
+        - Collecting and Managing Data
+        - Data Collection (Introduction)
+        - Handling Missing Data (Introduction)
+        - Label Encoding (Introduction)
+        - One Hot Encoding (Introduction)
+        - Creating Dummies
+        - Dropping Dummy Variables
+        - EDA (Types of EDA)
+    - Creating DataFrame
+    - Setting Custom Index
+    - Dropping Columns
+    - inplace parameter
+
+# Libraries Used
+    - Pandas
+    - NumPy
+    - Matplotlib
+    - Seaborn
+    - SciPy
