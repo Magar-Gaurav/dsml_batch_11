@@ -1,0 +1,22 @@
+""" Day 31: Data Manipulation and Outliers Handling """
+
+# Data Manipulation
+    # Inserting and deleting on rows and columns
+# Handling null values
+    # df.isna().sum()
+    - handling :
+        - removing null values(x)
+            - how = any => if any of them are NaN or null
+            - how = all => if all of them are NaN or null
+            - meaning of ignore_index
+        - imputation (Replacing null values with some values)
+            - using mean
+            - using median
+            - using transform:
+                simple example of groupby
+        - converting datatype into int 
+    - Handling Null values for age using initials (Mr.,Miss. or Master) groups
+# Handling Duplicates
+    - printing the duplicate data:
+        - df[df.duplicated(subset = "col_name")]
+    - using drop_duplicates
