@@ -1,22 +1,60 @@
-""" Day 31: Data Manipulation and Outliers Handling """
+Day 31: Data Manipulation and Outliers Handling
 
 # Data Manipulation
-    # Inserting and deleting on rows and columns
-# Handling null values
-    # df.isna().sum()
-    - handling :
-        - removing null values(x)
-            - how = any => if any of them are NaN or null
-            - how = all => if all of them are NaN or null
-            - meaning of ignore_index
-        - imputation (Replacing null values with some values)
-            - using mean
-            - using median
-            - using transform:
-                simple example of groupby
-        - converting datatype into int 
-    - Handling Null values for age using initials (Mr.,Miss. or Master) groups
+    # Deleting columns
+        - df.drop("column_name", axis=1, inplace=True)
+
+    # Deleting rows
+        - df.drop(index, axis=0, inplace=True)
+        - deleting row based on condition
+
+    # Inserting columns
+        - creating new column using list
+        - creating new column using df.apply() with lambda function
+
+    # Inserting rows
+        - using df.loc[index] = values
+
+# Handling Null Values
+    - df.isna().sum()
+
+    - Removing null values
+        - dropna()
+            - subset
+            - axis
+            - how = any
+            - how = all
+            - ignore_index
+
+    - Imputation (Replacing null values)
+        - fillna()
+        - using mean
+        - using groupby().transform("mean")
+
+    - Understanding transform()
+        - simple groupby example
+        - transform returns value for every original row
+
+    - Converting datatype
+        - converting Cabin column into integer
+        - using notna().astype(int)
+        - NaN → 0
+        - Available value → 1
+
+    - Visualizing after imputation
+        - histogram of Age
+        - box plot of Age
+
+    - Handling Age null values using passenger titles
+        - extracting Title (Mr., Miss., Master, etc.) from Name
+        - using titles for grouped imputation
+
 # Handling Duplicates
-    - printing the duplicate data:
-        - df[df.duplicated(subset = "col_name")]
-    - using drop_duplicates
+    - Printing duplicate records
+        - df[df.duplicated(subset="column_name")]
+
+    - Removing duplicates
+        - drop_duplicates()
+
+    - Viewing unique values
+        - drop_duplicates() on a single column
