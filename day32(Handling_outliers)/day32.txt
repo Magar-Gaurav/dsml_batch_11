@@ -1,0 +1,39 @@
+""" Day 32: Data Manipulation & Handling Outliers """
+
+# Data Manipulation
+    # Saving Data
+        - saving modified dataframe into main file using to_csv()
+
+    # Type Conversion
+        - astype() for datatype conversion
+        - description of int8
+        - changing datatype of a single column
+        - changing datatype of multiple columns using dictionary
+        - converting numeric values to boolean
+        - converting float values to integer
+
+    # Indexing
+        - get index = df.index
+        - manually set index = df.index = sequence/series
+        - create custom index using column values
+        - set index using df.set_index()
+        - reset index using df.reset_index()
+        - drop index while resetting (drop=True)
+
+# Handling Outliers
+    # Using Box Plot
+        - identify outliers visually
+
+    # Using IQR (Inter Quartile Range)
+        - calculate Q1 and Q3
+        - calculate IQR
+        - find lower and upper limits
+        - remove outliers
+        - extract only outlier records
+
+    # Using Z-Score
+        - calculate mean and standard deviation
+        - compute Z-score manually
+        - calculate Z-score for dataframe columns
+        - identify outliers using threshold
+        - ddof = Delta Degree of Freedom
