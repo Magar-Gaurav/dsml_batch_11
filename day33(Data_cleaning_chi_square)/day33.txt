@@ -1,0 +1,46 @@
+""" Day 33: Data Cleaning, Data Export & Chi-Square Test """
+
+# Data Cleaning
+    # Renaming Columns
+        - rename() to change column names
+        - rename single or multiple columns using dictionary
+        - inplace=True to modify original dataframe
+
+    # Creating Custom Dataset
+        - create dataframe using dictionary
+        - handling mixed datatypes
+        - creating missing values using np.nan
+
+    # Data Cleaning Techniques
+        - convert string values to integer using astype()
+        - remove negative values using abs()
+        - replace invalid categorical values using mode()
+        - fill missing numerical values using mean()
+        - check datatypes using dtypes
+
+# Saving Data
+    # Exporting Files
+        - save dataframe as CSV using to_csv()
+        - save dataframe as JSON using to_json()
+        - export without index (index=False)
+        - different JSON orientations (records, columns)
+
+# Chi-Square Test (Test of Independence)
+    # Creating Dataset
+        - create categorical dataset
+        - Gender and Purchased variables
+
+    # Contingency Table
+        - create frequency table using pd.crosstab()
+
+    # Chi-Square Test
+        - import chi2_contingency from scipy.stats
+        - calculate Chi-Square statistic
+        - calculate P-value
+        - Degree of Freedom (dof)
+        - Expected frequency table
+
+    # Hypothesis Testing
+        - set significance level (alpha = 0.05)
+        - compare P-value with alpha
+        - conclude whether variables are significantly related or independent
