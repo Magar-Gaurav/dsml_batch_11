@@ -1,0 +1,30 @@
+==================================================
+Day 34 - Data Integration & Data Encoding
+==================================================
+
+1. Methods of Data Integration
+Data integration is the process of combining data from multiple sources into a single, unified view.
+
+Types:
+- Virtual Integration
+- API Integration
+- ETL Integration (Extract, Transform, Load)
+
+
+2. Data Encoding
+Encoding is the process of converting categorical (text) data into numerical values so that machine learning algorithms can understand it.
+
+Types:
+- Label Encoding
+- One-Hot Encoding
+
+Topics Covered Today
+
+Methods of Data Integration
+    • Virtual Integration
+    • API Integration
+    • ETL Integration
+
+Data Encoding
+    • Label Encoding
+    • One-Hot Encoding
