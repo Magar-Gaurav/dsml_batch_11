@@ -1,0 +1,227 @@
+===========================================
+Day 35 - Data Normalization
+===========================================
+
+What is Normalization?
+----------------------
+Normalization is a preprocessing technique used to scale numerical values into a common range without changing their relationships.
+
+It helps machine learning algorithms perform better by preventing features with larger values from dominating smaller ones.
+
+===========================================
+1. Min-Max Normalization
+===========================================
+
+Formula
+
+X' = (X - Xmin) / (Xmax - Xmin)
+
+Range:
+0 to 1
+
+Example
+
+Original Values:
+20 40 60 80 120
+
+Normalized Values:
+0.0
+0.2
+0.4
+0.6
+1.0
+
+Python
+
+x_min = df.column.min()
+x_max = df.column.max()
+
+normalized = (x - x_min) / (x_max - x_min)
+
+Advantages
+----------
+• Easy to understand
+• Preserves relative distance
+• Keeps data between 0 and 1
+• Good for Neural Networks
+
+Disadvantages
+-------------
+• Sensitive to outliers
+• New incoming data changes scaling
+• Not robust for real-world noisy datasets
+
+===========================================
+2. Outlier Effect
+===========================================
+
+Example
+
+Marks:
+20
+40
+60
+80
+1000
+
+Because of one very large value (1000), every other value becomes compressed near 0.
+
+This is the biggest drawback of Min-Max Normalization.
+
+===========================================
+3. MinMaxScaler (Scikit-learn)
+===========================================
+
+from sklearn.preprocessing import MinMaxScaler
+
+scaler = MinMaxScaler(feature_range=(0,1))
+
+scaled = scaler.fit_transform(data)
+
+Advantages
+
+• Fast
+• Automatic
+• Used in real ML projects
+• Less coding
+
+===========================================
+4. Z-Score Normalization
+===========================================
+
+Formula
+
+Z = (X - Mean) / Standard Deviation
+
+Properties
+
+Mean = 0
+
+Standard Deviation = 1
+
+Advantages
+
+• Less sensitive to outliers
+• Useful for normally distributed data
+• Widely used in Machine Learning
+
+Manual Implementation
+
+mean = x.mean()
+
+std = x.std()
+
+z_score = (x - mean) / std
+
+===========================================
+5. StandardScaler
+===========================================
+
+from sklearn.preprocessing import StandardScaler
+
+scaler = StandardScaler()
+
+scaled = scaler.fit_transform(data)
+
+Produces
+
+Mean ≈ 0
+
+Standard Deviation ≈ 1
+
+===========================================
+6. Log Transformation
+===========================================
+
+Formula
+
+Y = log(X)
+
+Purpose
+
+• Reduces skewness
+• Compresses large values
+• Makes distributions more normal
+
+Python
+
+np.log(data)
+
+===========================================
+7. Power Transformation
+===========================================
+
+Formula
+
+Y = sign(X) × |X|^λ
+
+Purpose
+
+• Reduces skewness
+• Makes data closer to normal distribution
+
+Example
+
+power = 0.7
+
+new_data = np.sign(x) * np.power(np.abs(x), power)
+
+===========================================
+8. KDE Plot
+===========================================
+
+Kernel Density Estimation (KDE)
+
+Used to visualize the distribution of continuous variables.
+
+Example
+
+normalized.plot.kde()
+
+===========================================
+When to Use Which?
+===========================================
+
+Min-Max Scaling
+---------------
+• Neural Networks
+• Image Processing
+• Data between fixed range
+
+Z-Score Scaling
+---------------
+• Regression
+• Classification
+• PCA
+• SVM
+• Most Machine Learning Algorithms
+
+Log Transformation
+------------------
+• Highly skewed data
+• Financial data
+• Population data
+
+Power Transformation
+--------------------
+• Skewed datasets
+• Non-normal distributions
+
+===========================================
+Summary
+===========================================
+
+✔ Data Normalization
+✔ Min-Max Scaling
+✔ MinMaxScaler
+✔ Outlier Effect
+✔ Z-Score Normalization
+✔ StandardScaler
+✔ Log Transformation
+✔ Power Transformation
+✔ KDE Plot
+✔ Feature Scaling in Machine Learning
+
+===========================================
+End of Day 35
+===========================================
