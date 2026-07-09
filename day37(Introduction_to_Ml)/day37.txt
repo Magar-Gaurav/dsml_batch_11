@@ -1,0 +1,360 @@
+===========================================
+Day 37 - Machine Learning Fundamentals
+===========================================
+
+1. What is Machine Learning?
+----------------------------
+Machine Learning (ML) is a branch of Artificial Intelligence (AI) that enables computers to learn patterns from data and make predictions or decisions without being explicitly programmed for every task.
+
+Instead of following fixed rules, ML models improve their performance by learning from experience (data).
+
+Examples:
+- Email spam detection
+- Recommendation systems
+- Speech recognition
+- Image recognition
+- Self-driving cars
+
+------------------------------------------------------------
+
+2. Traditional Programming vs Machine Learning
+----------------------------------------------
+
+Traditional Programming
+
+Input:
+Data + Program
+        ↓
+     Output
+
+Machine Learning
+
+Input:
+Data + Expected Output (Labels)
+                ↓
+          Learning Algorithm
+                ↓
+           Trained Model (Program)
+
+Traditional programming requires humans to write rules.
+
+Machine learning learns those rules automatically from data.
+
+------------------------------------------------------------
+
+3. Importance of Machine Learning
+---------------------------------
+
+- Speech Recognition
+- Machine Translation
+- Smart Photo Search
+- Recommendation Systems
+- Fraud Detection
+- Medical Diagnosis
+- Self-driving Cars
+- Predictive Analytics
+
+------------------------------------------------------------
+
+4. AI vs ML vs Neural Networks
+------------------------------
+
+Artificial Intelligence (AI)
+- Broad field of making machines intelligent.
+
+Machine Learning (ML)
+- A subset of AI where machines learn from data.
+
+Neural Networks (NN)
+- A family of machine learning algorithms inspired by the human brain.
+
+Relationship:
+
+AI
+ └── Machine Learning
+      └── Neural Networks
+            └── Deep Learning
+
+------------------------------------------------------------
+
+5. Types of Machine Learning
+----------------------------
+
+1. Supervised Learning
+- Uses labeled data.
+- Learns input-output relationships.
+
+Examples:
+- House price prediction
+- Email spam detection
+
+2. Unsupervised Learning
+- Uses unlabeled data.
+- Finds hidden patterns or groups.
+
+Examples:
+- Customer Segmentation
+- Clustering
+
+3. Reinforcement Learning
+- Learns through rewards and penalties.
+
+Examples:
+- Robotics
+- Self-driving cars
+- Game playing
+
+------------------------------------------------------------
+
+6. Important Terminologies
+--------------------------
+
+Dataset
+A complete collection of data used for machine learning.
+
+Training Set
+Data used to train the model.
+
+Testing Set
+Data used to evaluate the model.
+
+Inference
+Using the trained model to make predictions on new data.
+
+Performance Metrics
+Measures how well a model performs.
+
+Examples:
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+- RMSE
+- MAE
+
+------------------------------------------------------------
+
+7. Supervised Learning Algorithms
+---------------------------------
+
+A. Regression Algorithms
+Predict continuous numerical values.
+
+Examples:
+- Linear Regression
+- Support Vector Regression (SVR)
+
+Applications:
+- House prices
+- Stock forecasting
+- Temperature prediction
+
+B. Classification Algorithms
+Predict categories or classes.
+
+Examples:
+- Logistic Regression
+- Decision Trees
+- Support Vector Machine (SVM)
+- Neural Networks
+
+Applications:
+- Spam Detection
+- Disease Prediction
+- Sentiment Analysis
+
+------------------------------------------------------------
+
+8. Odds and Log Odds
+--------------------
+
+Probability (P)
+
+0 ≤ P ≤ 1
+
+Odds
+
+Odds = P / (1 - P)
+
+Example
+
+P = 0.80
+
+Odds = 0.80 / 0.20 = 4
+
+Meaning:
+The event is four times more likely to happen than not happen.
+
+Log Odds (Logit)
+
+Log Odds = ln(P / (1-P))
+
+Log odds convert probabilities into values from negative infinity to positive infinity.
+
+Advantages:
+- Removes probability limits
+- Enables linear modeling
+- Foundation of Logistic Regression
+
+Important:
+Odds and Loss are completely different concepts.
+
+------------------------------------------------------------
+
+9. Linear Regression
+--------------------
+
+Linear Regression predicts continuous numerical values by fitting the best possible straight line through the data.
+
+Equation
+
+y = β0 + β1x
+
+Where
+
+y = predicted value
+
+β0 = intercept
+
+β1 = slope
+
+x = input feature
+
+Applications
+- Sales prediction
+- Temperature forecasting
+- House price prediction
+- Demand forecasting
+
+Assumptions
+- Linear relationship
+- Independent observations
+- Constant variance
+- Normally distributed errors
+
+------------------------------------------------------------
+
+10. Example
+-----------
+
+Dataset
+
+1000 plant species
+
+Input:
+Temperature
+
+Output:
+Seed Germination
+
+Encoding
+
+Yes = 1
+
+No = 0
+
+Linear Regression Model
+
+p = -1.7 + 0.064 × Temperature
+
+Coefficients
+
+β0 = -1.7
+
+β1 = 0.064
+
+Interpretation
+
+Every 1°C increase raises the predicted value by 0.064.
+
+Temperature Range
+
+20°C to 55°C
+
+------------------------------------------------------------
+
+11. Why Linear Regression Fails for Classification
+--------------------------------------------------
+
+Linear Regression can predict values below 0 or above 1.
+
+Example
+
+Temperature = 10°C
+
+Prediction = -1.06
+
+Negative probability is impossible.
+
+Temperature = 60°C
+
+Prediction = 2.14
+
+Probability greater than 1 is also impossible.
+
+Therefore, Linear Regression is not suitable for binary classification problems.
+
+------------------------------------------------------------
+
+12. Logistic Regression
+-----------------------
+
+Logistic Regression is a classification algorithm used for binary outcomes.
+
+Instead of a straight line, it uses the Sigmoid Function.
+
+Sigmoid Function
+
+P = 1 / (1 + e^(-z))
+
+where
+
+z = β0 + β1x
+
+Output
+
+Always between 0 and 1.
+
+Example
+
+Probability = 0.90
+
+Predict Class = 1
+
+Probability = 0.15
+
+Predict Class = 0
+
+Advantages
+- Produces valid probabilities
+- Suitable for binary classification
+- Uses Log Odds (Logit)
+- Easy to interpret
+
+------------------------------------------------------------
+
+Summary
+-------
+
+Machine Learning enables computers to learn from data.
+
+Traditional Programming:
+Data + Program → Output
+
+Machine Learning:
+Data + Output → Model
+
+Types:
+- Supervised Learning
+- Unsupervised Learning
+- Reinforcement Learning
+
+Regression predicts continuous values.
+
+Classification predicts categories.
+
+Linear Regression predicts numerical values.
+
+Logistic Regression predicts probabilities between 0 and 1 using the Sigmoid Function.
+
+Odds and Log Odds form the mathematical foundation of Logistic Regression.
