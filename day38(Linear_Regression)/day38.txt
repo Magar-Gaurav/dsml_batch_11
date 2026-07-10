@@ -1,0 +1,41 @@
+""" Day 38: Linear Regression """
+
+# Linear Regression
+    - Introduction to Linear Regression
+    - Understanding the regression equation
+    - Relationship between independent and dependent variables
+
+# Cost Function
+    - Sum of Squared Errors (SSE)
+    - Formula of SSE
+    - Purpose of minimizing prediction error
+
+# Maximum Likelihood Estimation (MLE)
+    - Basic concept of MLE
+    - Connection between MLE and Linear Regression
+
+# Data Visualization
+    - Scatter plot of TV vs Sales
+    - Scatter plot of Radio vs Sales
+    - Scatter plot of Newspaper vs Sales
+    - Understanding feature relationships
+
+# Manual Linear Regression
+    - Converting dataframe into NumPy arrays
+    - Calculating mean values
+    - Computing regression coefficients
+    - Drawing regression line manually
+
+# Scikit-learn Implementation
+    - Importing LinearRegression
+    - Creating LinearRegression model
+    - Training the model using fit()
+    - Predicting values using predict()
+    - Visualizing fitted regression line
+
+# Key Learning
+    - Linear Regression predicts continuous values.
+    - SSE measures prediction error.
+    - Lower SSE indicates a better model.
+    - MLE estimates parameters that best explain the observed data.
+    - Visualization helps understand linear relationships before modeling.
