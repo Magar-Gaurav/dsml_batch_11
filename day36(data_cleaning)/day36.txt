@@ -1,0 +1,32 @@
+Day 36: Data Preprocessing
+
+# Dataset Loading
+    - Importing required libraries
+    - Loading dataset using pandas
+    - Viewing dataset using head() and tail()
+
+# Dataset Exploration
+    - Checking dataset shape
+    - Viewing column names
+    - Understanding data types using info()
+    - Statistical summary using describe()
+    - Identifying numerical and categorical columns
+
+# Data Cleaning
+    - Renaming column names
+    - Checking missing values using isnull()
+    - Counting missing values
+    - Filling missing values
+        - Numerical columns using median
+        - Categorical columns using mode
+
+# Feature Engineering
+    - Label Encoding
+    - One-Hot Encoding using pd.get_dummies()
+
+# Feature Scaling
+    - Standardization using StandardScaler
+
+# Data Validation
+    - Verifying the processed dataset
+    - Checking transformed features
