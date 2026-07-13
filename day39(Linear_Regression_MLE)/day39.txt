@@ -1,0 +1,79 @@
+Day 39: Least Squares Method (LSM), Maximum Likelihood Estimation (MLE) & Performance Metrics
+
+Topics Covered
+
+1. Least Squares Method (LSM)
+- Introduction to Least Squares Method
+- Linear Regression using Least Squares
+- Advertising Dataset
+- Calculating Sum of Squared Errors (SSE)
+- Understanding Regression Coefficients
+- Model Training
+
+2. Train-Test Split
+- Splitting dataset into training and testing sets
+- train_test_split()
+- test_size
+- random_state
+- Importance of unseen test data
+
+3. Linear Regression using Scikit-Learn
+- Importing LinearRegression
+- Model fitting
+- Prediction
+- Coefficient
+- Intercept
+
+4. Performance Metrics
+- SSE (Sum of Squared Errors)
+- Mean Squared Error (MSE)
+- Mean Absolute Error (MAE)
+- R² Score
+
+5. Maximum Likelihood Estimation (MLE)
+- Introduction to MLE
+- Bernoulli Distribution
+- Analytical MLE
+- Estimating probability parameter (p)
+
+6. Mathematical Terminologies
+- Bernoulli Trial
+- Bernoulli Distribution
+- Probability Mass Function (PMF)
+- Probability Density Function (PDF)
+- Likelihood Function
+- Log-Likelihood Function
+
+7. Likelihood Visualization
+- Likelihood Curve
+- Log-Likelihood Curve
+- Finding Maximum Likelihood using numpy
+- np.argmax()
+
+Key Libraries
+- pandas
+- numpy
+- matplotlib
+- sklearn
+
+Important Functions
+- train_test_split()
+- LinearRegression()
+- fit()
+- predict()
+- mean_squared_error()
+- mean_absolute_error()
+- r2_score()
+- np.sum()
+- np.power()
+- np.log()
+- np.argmax()
+
+Today's Learning Outcome
+- Learned how Linear Regression minimizes error using Least Squares.
+- Understood why datasets are divided into training and testing sets.
+- Evaluated models using MSE, MAE and R² Score.
+- Learned the intuition behind Maximum Likelihood Estimation.
+- Understood Bernoulli experiments and probability estimation.
+- Learned the difference between PMF and PDF.
+- Visualized Likelihood and Log-Likelihood functions.
