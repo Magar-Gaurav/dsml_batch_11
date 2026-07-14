@@ -1,0 +1,70 @@
+Day 40: Multiple Linear Regression (MLR)
+
+Topics Covered
+
+1. Introduction to Multiple Linear Regression
+   - Difference between Simple and Multiple Linear Regression
+   - Multiple independent variables predicting one dependent variable
+   - Formula:
+     y = β₀ + β₁x₁ + β₂x₂ + β₃x₃
+
+2. Advertising Dataset
+   - Features:
+       • TV
+       • Radio
+       • Newspaper
+   - Target:
+       • Sales
+
+3. Data Visualization
+   - Scatter Plot:
+       - TV vs Sales
+       - Radio vs Sales
+       - Newspaper vs Sales
+   - Understanding feature relationships visually
+
+4. Mathematical Implementation
+   - Creating Design Matrix (Bias Term)
+   - Matrix Transpose
+   - Ordinary Least Squares (OLS)
+
+5. Normal Equation
+   β = (XᵀX)⁻¹XᵀY
+
+6. Finding Regression Coefficients
+   - β₀ (Intercept)
+   - β₁ (TV)
+   - β₂ (Radio)
+   - β₃ (Newspaper)
+
+7. Model Building using Scikit-learn
+   - train_test_split()
+   - LinearRegression()
+   - StandardScaler
+
+8. Prediction
+   - Model fitting
+   - Predicting Sales
+
+9. Performance Metrics
+   - Mean Squared Error (MSE)
+   - Mean Absolute Error (MAE)
+   - R² Score
+
+10. Limitation of Multiple Linear Regression
+    - Multicollinearity
+    - Highly correlated independent variables
+
+11. Possible Solutions
+    - Remove correlated features
+    - Feature Selection
+    - Dimensionality Reduction (PCA)
+    - Regularization (Ridge/Lasso)
+
+Key Learnings
+- Manual implementation of OLS
+- Matrix multiplication for regression
+- Normal Equation
+- Multiple feature regression
+- Model evaluation
+- Understanding multicollinearity
