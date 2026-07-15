@@ -1,0 +1,142 @@
+# Day 41: Logistic Regression
+
+## What is Logistic Regression?
+- Logistic Regression is a supervised machine learning algorithm.
+- It is used for Classification problems.
+- It predicts categorical outcomes instead of continuous values.
+- The output is generally:
+  - 0 = False / No / Negative
+  - 1 = True / Yes / Positive
+
+----------------------------------------
+
+## Why not Linear Regression?
+
+Linear Regression predicts continuous values.
+
+Examples:
+- House Price
+- Salary
+- Temperature
+
+Classification problems require probabilities between 0 and 1.
+
+Therefore Logistic Regression uses the Sigmoid Function.
+
+----------------------------------------
+
+## Sigmoid Function
+
+Formula:
+
+P = 1 / (1 + e^-x)
+
+Properties:
+- Output ranges from 0 to 1
+- Converts any real number into probability
+- Produces an S-shaped curve
+
+Decision Rule:
+Probability > Threshold (usually 0.5)
+→ Class = 1
+
+Otherwise
+→ Class = 0
+
+----------------------------------------
+
+## Creating Dataset
+
+Used:
+- sklearn.datasets.make_classification()
+
+Dataset contained:
+- GRE Score
+- Admission (0 or 1)
+
+Visualized using scatter plot.
+
+----------------------------------------
+
+## Linear Regression vs Logistic Regression
+
+Linear Regression
+- Predicts unlimited values
+- Best for regression
+
+Logistic Regression
+- Predicts probability
+- Best for classification
+
+Applied sigmoid function to convert predictions into probabilities.
+
+----------------------------------------
+
+## Logistic Regression Workflow
+
+1. Import dataset
+2. Clean missing values
+3. Encode categorical variables
+4. Split training/testing data
+5. Train Logistic Regression model
+6. Predict outcomes
+7. Evaluate accuracy
+
+----------------------------------------
+
+## Titanic Survival Prediction
+
+Dataset Features:
+- Passenger Class
+- Gender
+- Age
+- Fare
+- Embarked
+
+Target:
+- Survived (0 or 1)
+
+Steps:
+- Fill missing values
+- One-hot encode categorical columns
+- Train Logistic Regression model
+- Predict survival
+- Measure accuracy
+
+----------------------------------------
+
+## Evaluation Metrics
+
+- Accuracy Score
+- R² Score (calculated in notebook, though accuracy is the more appropriate metric for classification)
+
+----------------------------------------
+
+## Visualization
+
+Created plots showing:
+- GRE Score vs Admission
+- Passenger Class vs Survival
+- Gender vs Survival
+- Age vs Survival
+
+----------------------------------------
+
+## Key Takeaways
+
+✔ Logistic Regression is used for classification.
+✔ Sigmoid function converts values into probabilities.
+✔ Threshold decides final class.
+✔ Data preprocessing is important.
+✔ Logistic Regression performs well for binary classification problems.
+✔ Titanic dataset is a classic example of binary classification.
+
+----------------------------------------
+
+Tools Used
+
+- Python
+- NumPy
+- Pandas
+- Matplotlib
+- Scikit-learn
