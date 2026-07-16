@@ -1,0 +1,185 @@
+# Day 42: Machine Learning Evaluation Metrics
+
+Today I learned how to evaluate the performance of machine learning models using different evaluation metrics.
+
+--------------------------------------------------
+What are Evaluation Metrics?
+--------------------------------------------------
+
+Evaluation metrics help us understand how well a machine learning model performs on unseen data.
+
+For classification problems, the most common metrics are:
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+
+--------------------------------------------------
+1. Accuracy
+--------------------------------------------------
+
+Accuracy tells us how many predictions were correct out of all predictions.
+
+Formula:
+
+Accuracy = (TP + TN) / (TP + TN + FP + FN)
+
+Best used when the dataset is balanced.
+
+--------------------------------------------------
+2. Precision
+--------------------------------------------------
+
+Precision measures how many predicted positive values are actually positive.
+
+Formula:
+
+Precision = TP / (TP + FP)
+
+High precision means fewer false positives.
+
+Example:
+Spam detection systems.
+
+--------------------------------------------------
+3. Recall
+--------------------------------------------------
+
+Recall measures how many actual positive values were correctly identified.
+
+Formula:
+
+Recall = TP / (TP + FN)
+
+High recall means fewer false negatives.
+
+Example:
+Disease detection systems.
+
+--------------------------------------------------
+4. F1 Score
+--------------------------------------------------
+
+F1 Score is the harmonic mean of Precision and Recall.
+
+Formula:
+
+F1 Score = 2 × (Precision × Recall) / (Precision + Recall)
+
+Useful when both precision and recall are important.
+
+--------------------------------------------------
+Confusion Matrix
+--------------------------------------------------
+
+A Confusion Matrix summarizes prediction results.
+
+TP (True Positive):
+Correctly predicted positive.
+
+TN (True Negative):
+Correctly predicted negative.
+
+FP (False Positive):
+Incorrectly predicted positive.
+
+FN (False Negative):
+Incorrectly predicted negative.
+
+Using Scikit-Learn:
+
+from sklearn.metrics import confusion_matrix
+
+--------------------------------------------------
+Classification Report
+--------------------------------------------------
+
+Scikit-Learn provides a classification report containing:
+
+- Precision
+- Recall
+- F1 Score
+- Support
+
+Example:
+
+from sklearn.metrics import classification_report
+
+--------------------------------------------------
+Visualization
+--------------------------------------------------
+
+Confusion Matrix can be visualized using:
+
+- Seaborn Heatmap
+- ConfusionMatrixDisplay
+
+--------------------------------------------------
+New Concepts Introduced
+--------------------------------------------------
+
+Underfitting
+-------------
+Model is too simple and performs poorly on both training and testing data.
+
+Signs:
+- Low accuracy
+- High bias
+
+Solutions:
+- Increase model complexity
+- Add more features
+- Train longer
+
+--------------------------------------------------
+
+Overfitting
+------------
+Model memorizes the training data and performs poorly on new data.
+
+Signs:
+- Very high training accuracy
+- Low testing accuracy
+
+Solutions:
+- More training data
+- Cross-validation
+- Regularization
+- Simpler model
+- Early stopping
+
+--------------------------------------------------
+
+Regularization
+--------------
+A technique to reduce overfitting by penalizing large model weights.
+
+Types:
+
+L1 Regularization (Lasso)
+- Can remove unnecessary features.
+
+L2 Regularization (Ridge)
+- Shrinks weights without removing features.
+
+Purpose:
+Improve generalization on unseen data.
+
+--------------------------------------------------
+
+BLEU Score Introduction
+--------------------------------------------------
+
+ROUGE Score Introduction
+
+--------------------------------------------------
+Python Functions Learned
+--------------------------------------------------
+
+- accuracy_score()
+- precision_score()
+- recall_score()
+- f1_score()
+- confusion_matrix()
+- classification_report()
+- ConfusionMatrixDisplay()
