@@ -1,0 +1,80 @@
+===========================================
+DAY 43
+Topic: Dimensionality Reduction (PCA & LDA)
+===========================================
+
+Objective
+---------
+Learn how dimensionality reduction helps simplify datasets while preserving useful information for Machine Learning models.
+
+Topics Covered
+--------------
+
+1. Introduction to Dimensionality Reduction
+   - Definition
+   - Need for dimensionality reduction
+   - Curse of Dimensionality
+
+2. Principal Component Analysis (PCA)
+   - Unsupervised dimensionality reduction technique
+   - Projects data into lower dimensions
+   - Preserves maximum variance
+
+3. Mathematical Concepts
+   - Mean Centering
+   - Covariance Matrix
+   - Eigenvalues
+   - Eigenvectors
+   - Principal Components
+
+4. PCA Workflow
+   - Standardize the dataset
+   - Compute covariance matrix
+   - Calculate eigenvalues and eigenvectors
+   - Sort principal components
+   - Select top components
+   - Transform the original dataset
+
+5. Advantages of PCA
+   - Reduces computational cost
+   - Removes redundant information
+   - Reduces overfitting
+   - Helps visualize high-dimensional data
+   - Improves model efficiency
+
+6. Limitations of PCA
+   - Difficult to interpret transformed features
+   - Linear technique only
+   - Possible information loss
+
+7. Linear Discriminant Analysis (LDA)
+   - Supervised dimensionality reduction
+   - Uses class labels
+   - Maximizes separation between different classes
+
+PCA vs LDA
+----------
+
+PCA
+- Unsupervised
+- Maximizes variance
+- No class labels required
+
+LDA
+- Supervised
+- Maximizes class separation
+- Requires target labels
+
+Real-world Applications
+-----------------------
+- Face Recognition
+- Image Compression
+- Medical Imaging
+- Recommendation Systems
+- Financial Analysis
+- Bioinformatics
+- Natural Language Processing
+
+Conclusion
+----------
+Dimensionality Reduction is a crucial preprocessing technique in Machine Learning. PCA helps reduce feature dimensions while preserving maximum variance, whereas LDA focuses on maximizing class separation. Both techniques improve efficiency, reduce noise, and make models easier to train and visualize.
