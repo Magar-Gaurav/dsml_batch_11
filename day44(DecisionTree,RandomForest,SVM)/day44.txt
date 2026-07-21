@@ -1,0 +1,83 @@
+# Day 44 – Supervised Machine Learning Algorithms
+
+## Topics Covered
+
+### 1. Decision Tree
+
+* Introduction to Decision Tree
+* Tree Structure
+
+  * Root Node
+  * Decision Node
+  * Leaf Node
+* Splitting of Data
+* Entropy
+* Information Gain
+* Pruning
+* Advantages and Disadvantages
+* Practical implementation using Scikit-learn
+
+---
+
+### 2. Random Forest
+
+* Introduction
+* Ensemble Learning
+* Bootstrap Sampling
+* Random Feature Selection
+* Voting Mechanism
+* Reduction of Overfitting
+* Advantages and Limitations
+* Practical Classification Example
+
+---
+
+### 3. Support Vector Machine (SVM)
+
+* Introduction
+* Hyperplane
+* Support Vectors
+* Maximum Margin Principle
+* Binary Classification
+* High-dimensional Data Handling
+* Practical implementation using Scikit-learn
+
+---
+
+## Key Concepts Learned
+
+• Difference between Decision Tree and Random Forest
+
+• Why Random Forest performs better than a single Decision Tree
+
+• Understanding Entropy as a measure of impurity
+
+• Information Gain for selecting the best split
+
+• Importance of Pruning to reduce overfitting
+
+• How SVM finds the optimal separating hyperplane
+
+• Understanding support vectors and decision boundaries
+
+---
+
+## Libraries Used
+
+* pandas
+* numpy
+* matplotlib
+* seaborn
+* scikit-learn
+
+---
+
+## Learning Outcome
+
+By the end of today's session, I understood the working principles of three powerful supervised machine learning algorithms. I learned how Decision Trees split data using entropy and information gain, how Random Forest improves performance by combining multiple decision trees, and how Support Vector Machines classify data by maximizing the margin between classes. I also practiced implementing these models in Python using Scikit-learn.
+
+Next Goal:
+
+* Model evaluation
+* Hyperparameter tuning
+* Comparing classification algorithms on real-world datasets
