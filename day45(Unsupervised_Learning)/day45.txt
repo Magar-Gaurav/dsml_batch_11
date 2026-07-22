@@ -1,0 +1,55 @@
+==============================
+#100DaysOfDSML - Day 45
+Topic: Finding the Optimal Number of Clusters in K-Means
+==============================
+
+Today's learning was focused on selecting the optimal number of clusters (K) for the K-Means Clustering algorithm.
+
+Topics Covered
+--------------
+
+1. Iris Dataset
+- Loaded the Iris dataset from sklearn.datasets.
+- Used only the feature matrix (X) for clustering.
+
+2. Feature Scaling
+- Applied StandardScaler().
+- Learned why scaling is important before distance-based algorithms.
+- Prevents features with larger values from dominating Euclidean distance.
+
+3. Elbow Method
+- Calculated inertia for K values from 1 to 10.
+- Understood that inertia represents the Sum of Squared Distances (SSD) between data points and their assigned cluster centers.
+- Plotted the Elbow Curve.
+- Learned that the optimal K is usually located at the point where the decrease in inertia starts slowing down.
+
+4. Silhouette Score
+- Imported silhouette_score from sklearn.metrics.
+- Calculated silhouette scores for K values from 2 to 10.
+- Learned that silhouette score measures:
+    • Cluster cohesion
+    • Cluster separation
+- Understood why silhouette calculation starts from K=2:
+    A single cluster has no neighboring cluster for comparison.
+
+5. Selecting the Best K
+- Compared silhouette scores.
+- Selected the K value having the highest silhouette score.
+- Learned that the highest silhouette score generally indicates better clustering.
+
+6. Final K-Means Model
+- Trained the final KMeans model using the optimal number of clusters.
+- Used random_state for reproducibility.
+
+
+Python Libraries Used
+---------------------
+- sklearn.datasets
+- sklearn.cluster
+- sklearn.preprocessing
+- sklearn.metrics
+- matplotlib
+
+Today's Takeaway
+----------------
+Selecting the correct number of clusters is one of the most important parts of K-Means clustering. Instead of choosing K randomly, methods like the Elbow Method and Silhouette Score provide data-driven approaches for determining the optimal number of clusters and producing meaningful clustering results.
