@@ -1,0 +1,33 @@
+Day 46 - Clustering Algorithms & Introduction to K-Nearest Neighbors (KNN)
+
+Today's learning focused on advanced clustering techniques and the fundamentals of the K-Nearest Neighbors (KNN) algorithm.
+
+Topics Covered:
+
+1. Hierarchical Clustering
+   • Learned the concept of hierarchical clustering for grouping similar data points.
+   • Understood Agglomerative Clustering (Bottom-Up approach), where each data point starts as an individual cluster and merges based on similarity.
+   • Explored dendrograms to visualize the hierarchical merging process.
+
+2. Divisive Clustering
+   • Studied the Top-Down approach, where all data points initially belong to one cluster and are recursively divided into smaller clusters.
+   • Implemented a custom tree structure to understand recursive cluster splitting.
+   • Visualized the hierarchy using Matplotlib.
+
+3. DBSCAN (Density-Based Spatial Clustering of Applications with Noise)
+   • Learned how DBSCAN groups data based on density instead of distance from centroids.
+   • Worked with the make_moons dataset and applied feature scaling using StandardScaler.
+   • Understood the importance of the parameters eps and min_samples.
+   • Identified clusters as well as noise (outlier) points automatically.
+   • Practiced DBSCAN on both synthetic and custom datasets.
+
+4. Introduction to K-Nearest Neighbors (KNN)
+   • Learned the basic intuition behind the KNN algorithm.
+   • Understood how KNN classifies data based on the majority vote of its nearest neighbors.
+   • Discussed the importance of choosing an appropriate value of K and distance metrics.
+
+Key Takeaways:
+• Understood the differences between hierarchical and density-based clustering techniques.
+• Learned how clustering algorithms identify patterns in unlabeled datasets.
+• Gained practical experience in implementing Agglomerative Clustering, Divisive Clustering, and DBSCAN using Python and Scikit-learn.
+• Built a strong conceptual foundation for beginning supervised learning with the K-Nearest Neighbors (KNN) algorithm.
