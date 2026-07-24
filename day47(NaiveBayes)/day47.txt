@@ -1,0 +1,31 @@
+Day 47 - Learning Report
+
+Topics Covered:
+- Introduction to Naive Bayes Algorithm
+- Understanding Categorical Naive Bayes
+- Play Tennis Dataset
+- Label Encoding
+- Converting categorical values into numerical values
+- Feature and Target Selection
+- Train-Test Split
+- Training a CategoricalNB model
+- Making Predictions
+- Model Evaluation using Accuracy Score
+- Classification Report
+
+Key Learnings:
+- Learned how Naive Bayes performs classification using probability.
+- Understood why categorical data must be encoded before model training.
+- Implemented LabelEncoder for multiple categorical columns.
+- Built a complete machine learning pipeline from preprocessing to evaluation.
+- Gained practical experience using Scikit-learn's CategoricalNB classifier.
+
+Tools & Libraries:
+- Python
+- Pandas
+- Scikit-learn
+- LabelEncoder
+- CategoricalNB
+- train_test_split
+- accuracy_score
+- classification_report
