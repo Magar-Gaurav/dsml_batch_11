@@ -1,0 +1,42 @@
+Day 48 - Reinforcement Learning & Q-Learning
+
+Topics Covered:
+
+• Introduction to Reinforcement Learning (RL)
+• Understanding how RL differs from Supervised and Unsupervised Learning
+• Key Components of Reinforcement Learning:
+  - Agent
+  - Environment
+  - State (S)
+  - Action (A)
+  - Reward (R)
+  - Policy (π)
+
+• Q-Learning Algorithm
+• Bellman Equation
+• Q-Table Concept
+• Off-Policy Learning
+• Exploration vs Exploitation Trade-off
+• Epsilon-Greedy Strategy
+• Discount Factor (Gamma)
+• Learning Rate (Alpha)
+
+Practical Implementation:
+
+• Developed a Tic-Tac-Toe game
+• Created TicTacToe game environment
+• Implemented Human Player class
+• Implemented AI Player class
+• Used Q-Learning for AI decision making
+• Trained AI using rewards and state-action values
+• Played Human vs AI Tic-Tac-Toe
+
+Key Takeaways:
+
+• Reinforcement Learning allows agents to learn by interacting with an environment.
+• Q-Learning is a model-free reinforcement learning algorithm.
+• Bellman Equation is the backbone of Q-Learning updates.
+• Exploration helps discover better actions while exploitation uses learned knowledge.
+• Epsilon controls the exploration-exploitation balance.
+• Gamma determines the importance of future rewards.
+• Alpha controls how quickly the agent updates its knowledge.
