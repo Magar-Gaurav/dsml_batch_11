@@ -1,0 +1,38 @@
+Day 49 - Deep Learning with PyTorch
+
+Topics Covered:
+
+• Introduction to Neural Networks
+• Artificial Neural Networks (ANN)
+• Structure of a Neural Network
+    - Input Layer
+    - Hidden Layer
+    - Output Layer
+• Feed Forward Neural Network (FFNN)
+• Activation Functions
+    - Sigmoid
+    - Tanh
+    - ReLU
+    - Softmax
+• Forward Propagation
+• Creating Neural Networks using PyTorch
+• Understanding torch.nn Module
+• Building Custom Neural Network using nn.Module
+• Implementing Forward Function
+• Training Neural Networks
+• Loss Function
+• Optimizers in PyTorch
+• Adam Optimizer
+• Model Training Workflow
+• Running Multiple Neural Network Examples in PyTorch
+
+Key Learnings:
+
+✓ Understood the architecture of Artificial Neural Networks.
+✓ Learned how activation functions introduce non-linearity.
+✓ Implemented Feed Forward Neural Networks in PyTorch.
+✓ Built custom neural network classes using nn.Module.
+✓ Learned the purpose of the forward() method.
+✓ Understood how optimizers update model parameters.
+✓ Explored Adam Optimizer and its advantages.
+✓ Practiced multiple neural network implementation examples.
