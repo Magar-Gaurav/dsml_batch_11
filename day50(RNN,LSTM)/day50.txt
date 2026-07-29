@@ -1,0 +1,70 @@
+===========================
+Day 50 Learning Report
+===========================
+
+Date: Day 50 of #100DaysOfDSML
+
+Topics Covered:
+----------------
+• Introduction to Recurrent Neural Networks (RNN)
+• Why traditional Neural Networks are not suitable for sequential data
+• Working Principle of RNN
+• Limitations of RNN
+• Short-Term Memory Problem
+• Vanishing Gradient Problem
+• Introduction to Long Short-Term Memory (LSTM)
+• LSTM Architecture
+• Cell State
+• Hidden State
+• Forget Gate
+• Input Gate
+• Output Gate
+• Sigmoid Activation Function
+• Tanh Activation Function
+• Comparison between ANN and RNN
+• Real-world Applications of LSTM
+• Weather Forecasting using LSTM
+• Jena Climate Dataset
+• Data Preprocessing
+• Data Normalization using MinMaxScaler
+• Creating Time-Series Sequences
+• Train, Validation, and Test Split
+• Building an LSTM Model using TensorFlow/Keras
+• Dense Output Layer
+• Model Compilation
+• Adam Optimizer
+• Mean Absolute Error (MAE) Loss Function
+• EarlyStopping Callback
+• ModelCheckpoint Callback
+• Model Training
+• Loss Curve Visualization
+• Loading the Best Saved Model
+• Future Temperature Prediction
+• Inverse Scaling of Predictions
+
+Hands-on Practice:
+-------------------
+• Loaded and explored the Jena Climate Dataset.
+• Preprocessed and normalized the dataset using MinMaxScaler.
+• Created sequential input data for time-series forecasting.
+• Split the dataset into training, validation, and testing sets.
+• Built an LSTM-based neural network using TensorFlow/Keras.
+• Compiled the model with the Adam optimizer and MAE loss.
+• Used EarlyStopping and ModelCheckpoint during training.
+• Visualized training and validation loss.
+• Loaded the best-performing model.
+• Predicted future temperature values using the trained model.
+
+Key Learnings:
+---------------
+• Learned how RNN processes sequential data by maintaining previous information.
+• Understood why traditional RNNs struggle with long-term dependencies.
+• Learned how LSTM solves the vanishing gradient problem using memory cells and gates.
+• Understood the role of Forget Gate, Input Gate, and Output Gate.
+• Learned how to preprocess time-series data for deep learning models.
+• Built a complete LSTM pipeline for weather forecasting.
+• Understood model evaluation and prediction workflow for time-series forecasting.
+
+Conclusion:
+------------
+Day 50 marked my introduction to sequence modeling using Deep Learning. I explored Recurrent Neural Networks (RNNs), understood their limitations, and learned how Long Short-Term Memory (LSTM) networks overcome these challenges. I also implemented a complete weather forecasting project using TensorFlow/Keras, covering data preprocessing, model training, evaluation, and prediction.
