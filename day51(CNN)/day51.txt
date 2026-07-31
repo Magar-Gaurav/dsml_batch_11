@@ -1,0 +1,31 @@
+Day 51 - Deep Learning using CNN
+
+Topics Covered:
+- Introduction to Convolutional Neural Networks (CNN)
+- TensorFlow Keras Sequential API
+- Loading MNIST Dataset
+- Visualizing Random Images
+- Image Reshaping
+- Pixel Normalization
+- Determining Input Shape
+- Number of Output Classes
+- Building CNN Architecture
+- Conv2D Layer
+- MaxPooling Layer
+- Flatten Layer
+- Dense Layer
+- Dropout Layer
+- Model Summary
+- Model Compilation
+- Adam Optimizer
+- Sparse Categorical Crossentropy
+- Model Training
+- Validation Split
+- Training History
+- Loss Visualization
+- Prediction using Argmax
+- Confusion Matrix
+- Model Evaluation
+
+Key Learning:
+Today I implemented my first Convolutional Neural Network for handwritten digit recognition. I learned how convolution and pooling layers extract image features, how preprocessing improves training, and how to evaluate a CNN using prediction results and a confusion matrix.

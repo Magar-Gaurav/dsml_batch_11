@@ -1,0 +1,32 @@
+Day 52 - Hugging Face Datasets & Transformer-based Image Captioning
+
+Topics Covered:
+
+Part 1: Hugging Face Dataset Hub
+- Hugging Face Hub Introduction
+- Hugging Face Login
+- Loading Titanic Dataset
+- Converting Pandas DataFrame to Hugging Face Dataset
+- Dataset Train/Test Split
+- DatasetDict
+- Uploading Dataset to Hugging Face Hub
+- Loading Dataset from Hugging Face
+
+Part 2: Transformer-based Image Captioning
+- Introduction to Transformers
+- BLIP Image Captioning Model
+- Loading Nepali Image Caption Dataset
+- AutoProcessor
+- Image Preprocessing
+- Caption Tokenization
+- Dataset Transform Function
+- Custom Data Collator
+- TrainingArguments
+- Hugging Face Trainer API
+- GPU Training
+- Model Fine-tuning
+- Model Evaluation
+- Uploading Trained Model to Hugging Face Hub
+
+Key Learning:
+Today I learned how to manage datasets using the Hugging Face Hub and fine-tune a pretrained BLIP transformer model for image captioning. I explored the complete workflow of dataset preparation, preprocessing images and captions, training with the Hugging Face Trainer API, leveraging GPU acceleration, and publishing both datasets and trained models for public use. This session strengthened my understanding of modern vision-language AI applications.
