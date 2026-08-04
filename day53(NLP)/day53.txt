@@ -1,0 +1,18 @@
+Day 53 Learning Summary
+
+✅ Topic Covered
+Introduction to Pragmatics (Natural Language Processing / Linguistics)
+Difference between Literal Meaning and Pragmatic Meaning
+Understanding how the same sentence can have different interpretations depending on context.
+
+✅ Example Studied
+sentence = "Can you pass the salt?"
+Literal Meaning:
+The speaker is asking whether you are capable of passing the salt.
+
+Pragmatic Meaning:
+The speaker is making a polite request for you to pass the salt.
+
+✅ Key Concept Learned
+Computers interpret language literally, whereas humans understand implied meaning from context.
+Pragmatics helps AI and NLP systems infer the speaker's actual intention rather than just the literal words.
