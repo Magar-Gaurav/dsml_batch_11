@@ -1,0 +1,32 @@
+Day 54 – Sentence Transformers & Vector Databases
+
+Topics Covered:
+• Introduction to Sentence Transformers
+• Loading pretrained embedding model (all-MiniLM-L6-v2)
+• Understanding sentence embeddings
+• Encoding text into numerical vectors
+• Measuring semantic similarity using embeddings
+• Applications of sentence embeddings in NLP
+• Introduction to Vector Databases
+• Popular Vector Databases:
+  - ChromaDB
+  - Pinecone
+  - Supabase Vector
+  - pgvector (PostgreSQL)
+  - Other vector storage solutions
+
+Key Learnings:
+• Learned how Sentence Transformers convert sentences into dense vector representations.
+• Understood how semantic similarity works using embedding vectors.
+• Explored how embeddings are generated using pretrained Hugging Face models.
+• Learned the importance of vector databases in storing and retrieving embeddings efficiently.
+• Understood where vector databases are used in AI applications like semantic search, Retrieval-Augmented Generation (RAG), recommendation systems, document retrieval, and AI chatbots.
+
+Skills Practiced:
+• Python
+• Sentence Transformers
+• Hugging Face Models
+• Text Embeddings
+• Semantic Similarity
+• Vector Databases
+• NLP Fundamentals
