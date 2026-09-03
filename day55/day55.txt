@@ -1,0 +1,335 @@
+NLP TOPICS – SIMPLE DOCUMENTATION
+====================================
+
+1. TOKENIZATION
+----------------
+Tokenization is the process of breaking text into smaller pieces called tokens.
+
+A token can be:
+- A word
+- A sentence
+- A punctuation mark
+- Sometimes a sub-word
+
+Example:
+Text: "I love Python."
+Word tokens: ["I", "love", "Python", "."]
+
+Why is it used?
+Computers need text to be converted into smaller units before many NLP tasks can be performed.
+
+Common types:
+- Sentence tokenization: breaks a paragraph into sentences.
+- Word tokenization: breaks a sentence into words.
+
+Simple idea:
+Text -> Tokens -> Further NLP processing
+
+
+2. POS TAGGING
+--------------
+POS stands for Part-of-Speech.
+
+POS tagging assigns a grammatical category to each word, such as:
+- Noun: person, place, thing
+- Verb: action
+- Adjective: describes a noun
+- Adverb: describes an action or adjective
+- Pronoun: replaces a noun
+- Preposition: shows relationship between words
+
+Example:
+"Python is powerful."
+
+Python -> Noun
+is -> Verb
+powerful -> Adjective
+
+Why is it used?
+POS tagging helps a computer understand the grammatical role of words in a sentence.
+
+
+3. STOPWORDS
+------------
+Stopwords are common words that often carry little useful information for some NLP tasks.
+
+Examples:
+- the
+- is
+- a
+- an
+- of
+- in
+- and
+- to
+
+Example:
+Original: "The cat is sitting on the table."
+After removing common stopwords:
+"cat sitting table"
+
+Why remove them?
+Removing stopwords can reduce unnecessary text and make some NLP tasks faster and simpler.
+
+Important:
+Stopwords should not always be removed. In some tasks, words such as "not" are important for meaning and sentiment.
+
+
+4. WORD FREQUENCY ANALYSIS
+--------------------------
+Word frequency analysis counts how many times each word appears in a text.
+
+Example:
+Text: "Python is easy. Python is powerful."
+
+Frequency:
+Python -> 2
+is -> 2
+easy -> 1
+powerful -> 1
+
+Why is it used?
+It helps identify:
+- Common words
+- Important repeated terms
+- Main topics in a document
+- Patterns in text
+
+A frequency table or bar chart can be used to visualize the most common words.
+
+
+5. NER (NAMED ENTITY RECOGNITION)
+---------------------------------
+NER stands for Named Entity Recognition.
+
+It identifies important real-world entities in text and gives them categories.
+
+Common entity types:
+- PERSON -> a person's name
+- ORGANIZATION -> company or organization
+- LOCATION/GPE -> place or country
+- DATE -> date
+- MONEY -> monetary value
+
+Example:
+"Elon Musk founded SpaceX in 2002."
+
+Elon Musk -> PERSON
+SpaceX -> ORGANIZATION
+2002 -> DATE
+
+Why is it used?
+NER helps computers find useful information such as people, organizations, locations, and dates from text.
+
+
+6. SENTIMENT ANALYSIS USING POLARITY
+------------------------------------
+Sentiment analysis determines the emotional opinion expressed in text.
+
+Polarity usually represents whether the text is:
+- Positive
+- Negative
+- Neutral
+
+A common polarity score ranges from -1 to +1.
+
+General interpretation:
+- Close to +1 -> Positive
+- Close to 0 -> Neutral
+- Close to -1 -> Negative
+
+Example:
+"I love this product!"
+Polarity -> Positive
+
+"This product is terrible."
+Polarity -> Negative
+
+"The product arrived today."
+Polarity -> Neutral
+
+Why is it used?
+It can be used for:
+- Product reviews
+- Customer feedback
+- Social media analysis
+- Opinion mining
+
+
+7. TF-IDF
+---------
+TF-IDF stands for Term Frequency-Inverse Document Frequency.
+
+It is a technique used to represent text numerically and identify words that are important in a document.
+
+TF (Term Frequency):
+Measures how often a word appears in a document.
+
+IDF (Inverse Document Frequency):
+Measures how uncommon a word is across a collection of documents.
+
+Basic idea:
+- A word that appears often in one document can be important.
+- A word that appears in almost every document is usually less useful for distinguishing documents.
+
+Example:
+If the word "machine-learning" appears many times in one document but rarely in other documents, TF-IDF can give it a relatively high score.
+
+Why is it used?
+TF-IDF is commonly used for:
+- Text classification
+- Document similarity
+- Search systems
+- Keyword extraction
+- Resume-job matching
+
+Important:
+TF-IDF produces numerical vectors, but these vectors are not semantic embeddings. Similarity is based mainly on word usage.
+
+
+8. BAG OF WORDS (BOW)
+---------------------
+Bag of Words is a simple method for converting text into numbers.
+
+It creates a vocabulary of words and records how many times each word appears.
+
+Example:
+Documents:
+D1: "I like Python"
+D2: "I like Java"
+
+Vocabulary:
+["I", "like", "Python", "Java"]
+
+Vectors:
+D1 -> [1, 1, 1, 0]
+D2 -> [1, 1, 0, 1]
+
+The order of words is ignored.
+
+Why is it used?
+BOW is useful for simple NLP tasks such as:
+- Text classification
+- Spam detection
+- Document comparison
+- Basic machine learning models
+
+Limitation:
+BOW does not understand the meaning or context of words.
+
+
+9. EMBEDDINGS
+-------------
+Embeddings are numerical representations of text.
+
+They represent words, sentences, or documents as vectors of numbers.
+
+The main idea is that text with similar meanings can have similar vector representations.
+
+Example:
+"king" and "queen" may have related vector representations because their meanings are related.
+
+Sentence example:
+"The cat is sleeping."
+"The kitten is resting."
+
+A good embedding model can represent these sentences as vectors that are relatively similar because their meanings are related.
+
+Why are embeddings used?
+They are widely used for:
+- Semantic search
+- Recommendation systems
+- Text similarity
+- RAG systems
+- Question answering
+- Classification
+- LLM applications
+
+Difference from BOW and TF-IDF:
+- BOW mainly counts words.
+- TF-IDF gives importance to words based on frequency.
+- Embeddings aim to represent semantic meaning and relationships.
+
+
+QUICK COMPARISON
+----------------
+
+Tokenization:
+Breaks text into smaller units.
+
+POS Tagging:
+Identifies the grammatical role of words.
+
+Stopwords:
+Identifies/removes common words when appropriate.
+
+Word Frequency:
+Counts how often words appear.
+
+NER:
+Finds named entities such as people, organizations, and places.
+
+Sentiment Analysis:
+Determines whether text is positive, negative, or neutral.
+
+BOW:
+Represents text using word counts.
+
+TF-IDF:
+Represents text using word importance.
+
+Embeddings:
+Represents text as vectors that can capture semantic relationships.
+
+
+BASIC NLP PIPELINE
+------------------
+A simple NLP workflow can look like:
+
+Raw Text
+   |
+   v
+Tokenization
+   |
+   v
+Stopword Handling / Text Cleaning
+   |
+   v
+POS Tagging / NER
+   |
+   v
+Feature Representation
+   |
+   +----> BOW
+   |
+   +----> TF-IDF
+   |
+   +----> Embeddings
+   |
+   v
+Machine Learning / NLP Task
+   |
+   +----> Classification
+   +----> Sentiment Analysis
+   +----> Similarity
+   +----> Search
+   +----> Question Answering
+
+
+FINAL SUMMARY
+-------------
+NLP allows computers to work with human language.
+
+The topics covered today form important building blocks:
+
+1. Tokenization -> breaks text into manageable pieces.
+2. POS Tagging -> identifies word roles.
+3. Stopwords -> handles very common words.
+4. Word Frequency -> counts repeated words.
+5. NER -> identifies real-world entities.
+6. Sentiment Analysis -> identifies opinion/polarity.
+7. BOW -> converts text into word-count vectors.
+8. TF-IDF -> converts text into importance-based vectors.
+9. Embeddings -> converts text into meaningful numerical vectors.
+
+Together, these techniques help transform raw human language into information that computers and machine learning models can process.
