@@ -1,0 +1,350 @@
+DAY 56 – PostgreSQL, FastAPI & Backend Project Setup
+SkillShikshya DSML Learning Journey
+
+==================================================
+
+1. CREATING A DATABASE IN POSTGRESQL
+   ==================================================
+
+Today I learned how to create a database in PostgreSQL.
+
+PostgreSQL is a relational database management system used to store and manage structured data.
+
+A database contains tables, and tables contain records and columns.
+
+Example:
+
+CREATE DATABASE dsml_project;
+
+This command creates a new PostgreSQL database named dsml_project.
+
+==================================================
+
+2. POSTGRESQL PRIVILEGES
+   ==================================================
+
+I learned about privileges in PostgreSQL.
+
+Privileges determine what a user or role is allowed to do with a database or its objects.
+
+Some common privileges are:
+
+* CONNECT – allows a user to connect to a database
+* SELECT – allows reading data
+* INSERT – allows adding data
+* UPDATE – allows modifying data
+* DELETE – allows deleting data
+* CREATE – allows creating database objects
+
+Privileges are important for database security because they prevent users from accessing or modifying things they should not.
+
+==================================================
+
+3. INITIALIZING A PROJECT USING UV
+   ==================================================
+
+I learned how to initialize a Python project using uv.
+
+Command:
+
+uv init dsml_project
+
+uv helps with Python project setup, dependency management, and running project commands.
+
+It provides a structured way to manage a Python application.
+
+==================================================
+
+4. FASTAPI SETUP
+   ==================================================
+
+I learned how to set up a basic FastAPI application.
+
+FastAPI is a modern Python framework used to build APIs and backend applications.
+
+It is commonly used for building REST APIs and works well with Python type hints.
+
+A basic FastAPI project contains an application entry point such as:
+
+main.py
+
+The FastAPI application can then define API routes and return responses to clients.
+
+==================================================
+
+5. RUNNING THE APPLICATION
+   ==================================================
+
+I learned how to run the Python application using uv.
+
+Command:
+
+uv run main.py
+
+I also learned about development reload.
+
+Reload mode automatically restarts the development server when code changes are detected.
+
+This is useful during development because the server does not need to be manually restarted after every change.
+
+==================================================
+
+6. INSTALLING SQLALCHEMY
+   ==================================================
+
+I learned how to add SQLAlchemy to the project.
+
+SQLAlchemy is a Python SQL toolkit and ORM.
+
+ORM stands for Object Relational Mapper.
+
+It allows Python applications to work with relational databases using Python objects and SQL expressions.
+
+In a backend project, the general flow can be:
+
+FastAPI
+↓
+SQLAlchemy
+↓
+PostgreSQL
+
+==================================================
+
+7. .ENV FILE
+   ==================================================
+
+I learned why environment variables are used in backend applications.
+
+A .env file can store configuration values such as:
+
+* Database URL
+* Database username
+* Database password
+* Application settings
+
+Example:
+
+DATABASE_URL=...
+
+Keeping configuration outside the source code makes the application easier to configure and helps prevent sensitive information from being hard-coded.
+
+The .env file should normally not be committed to Git.
+
+==================================================
+
+8. .ENV.EXAMPLE
+   ==================================================
+
+I also learned about the .env.example file.
+
+The .env.example file acts as a template for the environment variables required by the application.
+
+For example:
+
+DATABASE_URL=
+DATABASE_USER=
+DATABASE_PASSWORD=
+
+Unlike the real .env file, it should not contain actual passwords or other secret values.
+
+It helps other developers understand which environment variables they need to configure.
+
+==================================================
+
+9. MAKEFILE
+   ==================================================
+
+I learned about using a Makefile in a software project.
+
+A Makefile can contain shortcuts for frequently used commands.
+
+For example, commands can be created for:
+
+* Running the application
+* Running the linter
+* Formatting code
+* Running tests
+* Running database migrations
+
+The main purpose is to make development commands easier and more consistent.
+
+==================================================
+
+10. RUFF
+    ==================================================
+
+I learned about Ruff.
+
+Ruff is a fast Python linting and code-quality tool.
+
+It can identify problems such as:
+
+* Unused imports
+* Code style issues
+* Common programming mistakes
+* Other linting problems
+
+Using Ruff helps keep Python code clean and consistent.
+
+==================================================
+
+11. LINTING
+    ==================================================
+
+Linting means automatically checking source code for possible problems and code-quality issues.
+
+A linter can detect issues before the application is executed.
+
+Linting is useful because it helps developers maintain readable, consistent, and cleaner code.
+
+==================================================
+
+12. MYPY
+    ==================================================
+
+I learned about mypy.
+
+mypy is a static type checker for Python.
+
+Python supports type hints, for example:
+
+name: str
+age: int
+
+mypy checks whether the types used in the program are consistent.
+
+It can help detect potential type-related errors before running the application.
+
+==================================================
+
+13. ASYNCPG
+    ==================================================
+
+I learned about asyncpg.
+
+asyncpg is an asynchronous PostgreSQL database driver for Python.
+
+It allows Python applications to communicate with PostgreSQL asynchronously.
+
+This is particularly useful when developing asynchronous applications such as FastAPI backends.
+
+==================================================
+
+14. ALEMBIC
+    ==================================================
+
+I learned about Alembic.
+
+Alembic is a database migration tool commonly used with SQLAlchemy.
+
+Database migrations allow developers to track changes made to the database schema.
+
+For example:
+
+* Creating a table
+* Adding a column
+* Removing a column
+* Changing a table structure
+
+Instead of manually changing the database every time, migrations provide a controlled way to update the database schema.
+
+==================================================
+
+15. CREATING TABLES USING ALEMBIC
+    ==================================================
+
+I learned how database tables can be created and updated using Alembic migrations.
+
+The general workflow is:
+
+1. Create or update the SQLAlchemy model.
+2. Generate a migration.
+3. Review the migration.
+4. Apply the migration.
+5. Check the updated database.
+
+This makes database changes trackable and easier to manage.
+
+==================================================
+
+16. HOW THE TOOLS WORK TOGETHER
+    ==================================================
+
+Today's learning helped me understand how different backend technologies work together.
+
+uv
+→ Python project and dependency management
+
+FastAPI
+→ API and backend development
+
+SQLAlchemy
+→ ORM and database interaction
+
+asyncpg
+→ Asynchronous PostgreSQL connection
+
+PostgreSQL
+→ Database for storing application data
+
+Alembic
+→ Database schema migrations
+
+.env
+→ Environment configuration and secrets
+
+.env.example
+→ Environment variable template
+
+Makefile
+→ Command automation
+
+Ruff
+→ Python linting and code quality
+
+mypy
+→ Python static type checking
+
+==================================================
+
+17. OVERALL LEARNING
+    ==================================================
+
+Today's learning was about setting up the foundation of a proper backend project.
+
+Instead of only writing individual Python programs, I learned how different tools can be combined to create a structured application.
+
+The overall architecture can be understood as:
+
+Client
+↓
+FastAPI
+↓
+SQLAlchemy
+↓
+asyncpg
+↓
+PostgreSQL
+
+And:
+
+SQLAlchemy Models
+↓
+Alembic
+↓
+Database Migrations
+↓
+PostgreSQL Tables
+
+==================================================
+
+# DAY 56 TAKEAWAY
+
+Today I learned the fundamentals of setting up a backend project using FastAPI and PostgreSQL.
+
+I also learned about project management with uv, database interaction with SQLAlchemy, asynchronous PostgreSQL connectivity with asyncpg, database migrations with Alembic, environment variables, Makefile automation, Ruff linting, and mypy type checking.
+
+This gave me a better understanding of how the different components of a modern Python backend project fit together.
+
+DAY 56 – LEARNING COMPLETE
+SkillShikshya DSML Journey

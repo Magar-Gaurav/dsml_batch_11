@@ -1,0 +1,31 @@
+[project]
+name = "dsml11-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "alembic>=1.19.1",
+    "asyncpg>=0.31.0",
+    "dotenv>=0.9.9",
+    "fastapi[standard]>=0.141.1",
+    "lint>=1.2.1",
+    "mypy>=2.3.1",
+    "psycopg[binary]>=3.3.5",
+    "pydantic>=2.13.5",
+    "ruff>=0.16.6",
+    "sqlalchemy[standard]>=2.0.52",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.lint]
+# Enable Pyflakes (F), Pycodestyle (E, W), and Isort import sorting (I)
+select = ["F", "E", "W", "I"]
+ignore = ["E501"] # Ignore long line violations (since formatter handles it)
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "tab" # Great if you prefer tabs over spaces!
