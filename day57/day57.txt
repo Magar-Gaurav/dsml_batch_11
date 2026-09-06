@@ -1,0 +1,391 @@
+DAY 57 - DOCKER, ORM & POSTGRESQL CRUD
+=======================================
+
+Learning Program: SkillShikshya
+Day: 57
+
+Today's Topics:
+1. Docker
+2. How Docker Works
+3. Docker Images and Containers
+4. ORM (Object Relational Mapping)
+5. ORM with PostgreSQL
+6. CRUD Operations using ORM
+
+
+1. DOCKER
+---------
+
+Docker is a platform used to build, package, and run applications in
+containers.
+
+A container provides an isolated environment where an application can
+run with the dependencies it needs.
+
+The main idea behind Docker is:
+
+"Build once and run consistently anywhere."
+
+
+2. WHY DOCKER?
+--------------
+
+Without Docker, an application may work on one computer but fail on
+another computer because of differences in:
+
+- Python or Node.js versions
+- Libraries and dependencies
+- Operating system configuration
+- Environment settings
+
+Docker helps solve these problems by packaging the application and its
+required environment into a container.
+
+
+3. HOW DOCKER WORKS
+-------------------
+
+A simple Docker workflow is:
+
+Application
+     |
+     v
+Dockerfile
+     |
+     v
+Docker Image
+     |
+     v
+Docker Container
+     |
+     v
+Running Application
+
+
+Dockerfile:
+A Dockerfile contains instructions for creating a Docker image.
+
+Image:
+An image is a packaged template containing the application and the
+dependencies required to run it.
+
+Container:
+A container is a running instance of a Docker image.
+
+Docker Engine:
+Docker Engine is responsible for creating and managing Docker objects
+such as containers, images, networks, and volumes.
+
+
+4. DOCKER IMAGE
+---------------
+
+A Docker image is a read-only template used to create containers.
+
+For example, an image can contain:
+
+- Python
+- Application code
+- Required Python packages
+- Configuration required by the application
+
+One image can be used to create multiple containers.
+
+
+5. DOCKER CONTAINER
+-------------------
+
+A container is a running instance of an image.
+
+Containers are:
+
+- Isolated
+- Lightweight
+- Portable
+- Independently manageable
+
+For example, a project can have separate containers for:
+
+- Frontend
+- Backend
+- PostgreSQL database
+
+
+6. BASIC DOCKER COMMANDS
+------------------------
+
+Some common Docker commands are:
+
+docker --version
+    Checks the installed Docker version.
+
+docker pull <image>
+    Downloads an image.
+
+docker images
+    Shows available Docker images.
+
+docker ps
+    Shows running containers.
+
+docker ps -a
+    Shows all containers, including stopped containers.
+
+docker run <image>
+    Creates and starts a container.
+
+docker stop <container>
+    Stops a running container.
+
+docker start <container>
+    Starts a stopped container.
+
+docker rm <container>
+    Removes a container.
+
+docker rmi <image>
+    Removes an image.
+
+
+7. ORM
+------
+
+ORM stands for Object Relational Mapping.
+
+ORM allows us to work with a relational database using programming
+language objects instead of writing SQL queries for every operation.
+
+For example:
+
+Python Class  <------>  Database Table
+Python Object <------>  Database Row
+Class Attribute <----->  Database Column
+
+
+8. WHY USE ORM?
+---------------
+
+Without ORM, we commonly write SQL queries manually.
+
+Example:
+
+INSERT INTO users (name, email)
+VALUES ('Gaurav', 'gaurav@example.com');
+
+
+With ORM, we can create an object and use the ORM to persist it to
+the database.
+
+This makes database operations easier to organize inside an application.
+
+
+9. ORM WITH POSTGRESQL
+----------------------
+
+PostgreSQL is a relational database management system.
+
+An ORM such as SQLAlchemy can be used to connect a Python application
+with PostgreSQL.
+
+A common structure is:
+
+Python Application
+       |
+       v
+      ORM
+       |
+       v
+PostgreSQL Database
+
+
+The ORM handles the communication between the application and the
+database.
+
+
+10. CRUD OPERATIONS
+-------------------
+
+CRUD stands for:
+
+C = Create
+R = Read
+U = Update
+D = Delete
+
+
+CREATE
+------
+
+Create means adding new data to the database.
+
+Example:
+
+Add a new user.
+
+User:
+Name: Gaurav
+Email: gaurav@example.com
+
+
+READ
+----
+
+Read means retrieving existing data from the database.
+
+Examples:
+
+- Get all users
+- Get one user
+- Find users based on a condition
+
+
+UPDATE
+------
+
+Update means modifying existing data.
+
+Example:
+
+Change a user's email address.
+
+Old Email:
+old@example.com
+
+New Email:
+new@example.com
+
+
+DELETE
+------
+
+Delete means removing data from the database.
+
+Example:
+
+Delete a user from the users table.
+
+
+11. ORM CRUD WORKFLOW
+---------------------
+
+A basic ORM CRUD workflow can be understood as:
+
+Create:
+Create an ORM object
+        |
+Add it to a session
+        |
+Commit the transaction
+        |
+Data is stored in PostgreSQL
+
+
+Read:
+Create a query
+        |
+Execute the query
+        |
+Get ORM objects
+        |
+Use the returned data
+
+
+Update:
+Get existing ORM object
+        |
+Change its attributes
+        |
+Commit the transaction
+        |
+Database is updated
+
+
+Delete:
+Get existing ORM object
+        |
+Delete the object
+        |
+Commit the transaction
+        |
+Database record is removed
+
+
+12. SESSION IN ORM
+------------------
+
+A session is used to manage database operations and transactions.
+
+The session can:
+
+- Add new objects
+- Retrieve objects
+- Modify objects
+- Delete objects
+- Commit changes
+- Roll back changes when necessary
+
+
+13. IMPORTANT CONCEPTS LEARNED
+------------------------------
+
+Docker:
+- Containerization
+- Docker Image
+- Docker Container
+- Dockerfile
+- Docker Engine
+- Basic Docker commands
+
+ORM:
+- Object Relational Mapping
+- Models
+- Database sessions
+- Mapping objects to database tables
+- PostgreSQL connection
+
+CRUD:
+- Create
+- Read
+- Update
+- Delete
+
+
+14. WHAT I UNDERSTOOD TODAY
+---------------------------
+
+Today I learned how Docker helps applications run in isolated and
+consistent environments.
+
+I also learned how ORM allows developers to interact with relational
+databases using programming objects instead of writing raw SQL for
+every operation.
+
+I practiced understanding CRUD operations with PostgreSQL using ORM.
+
+This helped me understand how modern backend applications can connect
+their application logic with a PostgreSQL database in a structured way.
+
+
+15. DAY 57 SUMMARY
+------------------
+
+Today's learning connected two important backend concepts:
+
+Docker
+   ->
+Containerized application environment
+
+ORM
+   ->
+Application-to-database interaction
+
+PostgreSQL
+   ->
+Relational database
+
+CRUD
+   ->
+Create, Read, Update, Delete data
+
+Together, these concepts are important for building and deploying
+modern backend applications.

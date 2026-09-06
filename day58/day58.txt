@@ -1,0 +1,319 @@
+# DAY 58 – LANGCHAIN BASICS AND RAG CHATBOT
+
+Learning Program: SkillShikshya
+Day: 58
+
+## TOPICS COVERED
+
+1. LangChain Basics
+
+2. LLM
+
+3. Document Loading
+
+4. Document Parsing
+
+5. Document Retrieval
+
+6. System Prompt
+
+7. LangChain Nodes
+
+8. LangGraph
+
+9. Runnables
+
+10. RAG
+
+11. Simple PDF-based RAG Chatbot
+
+12. LANGCHAIN
+
+---
+
+LangChain is a framework used to build applications with Large Language Models (LLMs).
+
+It provides components that can be connected together to create AI applications.
+
+LangChain can work with:
+
+* LLMs
+* Prompts
+* Documents
+* Retrievers
+* Tools
+* Runnables
+* Workflows
+
+The main idea is to connect different components to create a complete AI application.
+
+2. LLM
+
+---
+
+LLM stands for Large Language Model.
+
+An LLM is an AI model that can understand and generate human-like text.
+
+It can be used for:
+
+* Question answering
+* Text generation
+* Summarization
+* Chatbots
+* Text analysis
+
+In a RAG application, the LLM receives relevant information from a document and uses that information to generate the answer.
+
+3. DOCUMENT LOADING
+
+---
+
+Document loading means bringing information from a file into the application.
+
+For example, a PDF can be loaded using a document loader.
+
+Basic flow:
+
+PDF
+↓
+Document Loader
+↓
+Loaded Document
+
+4. DOCUMENT PARSING
+
+---
+
+After loading a document, its content needs to be converted into usable text.
+
+Parsing extracts readable information from the document.
+
+For example:
+
+PDF
+↓
+Loading
+↓
+Parsing
+↓
+Text Content
+
+The extracted text can then be used for retrieval and question answering.
+
+5. DOCUMENT RETRIEVAL
+
+---
+
+Retrieval means finding relevant information from a document or collection of documents.
+
+When a user asks a question, the application searches for information related to that question.
+
+Example:
+
+User Question:
+"What is machine learning?"
+
+The retriever searches the document and finds the relevant section about machine learning.
+
+The relevant information is then provided to the LLM.
+
+6. SYSTEM PROMPT
+
+---
+
+A system prompt provides instructions to the LLM.
+
+It tells the model how it should behave while generating responses.
+
+For a document-based chatbot, the system prompt can instruct the LLM to:
+
+* Use the provided context.
+* Answer the user's question.
+* Avoid making up information.
+* Stay related to the provided document.
+
+A system prompt helps control the behavior of the chatbot.
+
+7. LANGCHAIN NODES
+
+---
+
+A node can represent an individual step in an AI workflow.
+
+For example, a workflow can contain nodes for:
+
+* Receiving a question
+* Retrieving documents
+* Creating a prompt
+* Calling the LLM
+* Returning the answer
+
+Each node performs a specific task.
+
+Multiple nodes can be connected to create an AI workflow.
+
+8. LANGGRAPH
+
+---
+
+LangGraph is used to create structured workflows for AI applications.
+
+It represents a workflow using nodes and connections between those nodes.
+
+For example:
+
+Question
+↓
+Retrieve Information
+↓
+Create Prompt
+↓
+LLM
+↓
+Answer
+
+Each node performs a particular operation.
+
+LangGraph is useful when an AI application requires a more structured workflow or multiple steps.
+
+9. RUNNABLES
+
+---
+
+Runnables are components that can be executed as part of a LangChain workflow.
+
+Different operations can be connected together.
+
+For example:
+
+Input
+↓
+Retriever
+↓
+Prompt
+↓
+LLM
+↓
+Output
+
+Runnables help create pipelines where the output of one component can become the input of another component.
+
+10. RAG
+
+---
+
+RAG stands for Retrieval-Augmented Generation.
+
+RAG combines information retrieval with an LLM.
+
+Instead of asking the LLM to answer only from its existing knowledge, the application first retrieves relevant information from an external source.
+
+The retrieved information is then provided to the LLM as context.
+
+Basic RAG flow:
+
+User Question
+↓
+Retrieve Relevant Information
+↓
+Add Information to Prompt
+↓
+LLM
+↓
+Final Answer
+
+11. SIMPLE PDF RAG CHATBOT
+
+---
+
+Today I created a simple RAG architecture chatbot.
+
+The chatbot can read information from a PDF and answer questions related to that PDF.
+
+Basic architecture:
+
+PDF
+↓
+Document Loading
+↓
+Document Parsing
+↓
+Document Retrieval
+↓
+System Prompt + Retrieved Context
+↓
+LLM
+↓
+Answer
+
+## HOW THE CHATBOT WORKS
+
+Step 1:
+A PDF document is provided to the application.
+
+Step 2:
+The PDF is loaded using a document loader.
+
+Step 3:
+The content of the PDF is parsed into usable text.
+
+Step 4:
+The document content is prepared for retrieval.
+
+Step 5:
+The user asks a question.
+
+Step 6:
+The retriever finds relevant information from the document.
+
+Step 7:
+The relevant information is added to the prompt as context.
+
+Step 8:
+The LLM receives the question and relevant context.
+
+Step 9:
+The LLM generates the final answer.
+
+Step 10:
+The chatbot displays the answer to the user.
+
+## EXAMPLE
+
+PDF Content:
+
+"Python is a high-level programming language used for
+web development, automation, data science, and machine learning."
+
+User Question:
+
+"What is Python?"
+
+The RAG system retrieves the relevant information from the PDF and provides it to the LLM.
+
+The chatbot can then generate an answer based on the document.
+
+## WHAT I LEARNED TODAY
+
+Today I learned:
+
+* The basic idea behind LangChain.
+* What an LLM is.
+* How documents can be loaded.
+* How document content can be parsed.
+* How retrieval works.
+* The purpose of system prompts.
+* The concept of nodes in AI workflows.
+* The basics of LangGraph.
+* How Runnables can connect different components.
+* How RAG works.
+* How to create a simple PDF-based RAG chatbot.
+
+## KEY TAKEAWAY
+
+The main concept I learned today is that an LLM can be connected with external documents using a RAG architecture.
+
+Instead of depending only on the model's existing knowledge, the system can retrieve relevant information from a document and provide that information to the LLM.
+
+This makes it possible to build practical document-based AI chatbots.
