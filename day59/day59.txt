@@ -1,0 +1,147 @@
+DAY 59 – LANGCHAIN, API KEYS & AGENTIC AI
+==========================================
+
+Today I learned about LangChain, API keys, OpenAI API, Qwen API, and the basics of Agentic AI.
+
+1. LANGCHAIN
+------------
+
+LangChain is a framework used to build applications powered by Large Language Models (LLMs).
+
+It helps connect LLMs with different components such as:
+
+- Prompts
+- Models
+- Tools
+- APIs
+- Documents
+- Agents
+- Memory
+
+LangChain makes it easier to build practical AI applications instead of only sending questions directly to an LLM.
+
+
+2. API KEY
+----------
+
+An API key is a secret key used by an application to access an API.
+
+For example, when an application wants to communicate with an AI model through an API, it may need an API key.
+
+Important:
+- API keys should be kept private.
+- They should not be uploaded to GitHub.
+- Environment variables can be used to store API keys securely.
+
+Example:
+
+OPENAI_API_KEY="your_api_key"
+
+
+3. OPENAI API
+-------------
+
+I learned about using an OpenAI API key with an AI application.
+
+The API allows an application to communicate with OpenAI models.
+
+With LangChain, an LLM API can be connected to prompts, tools, and agents to create more useful AI applications.
+
+
+4. QWEN API
+-----------
+
+I also learned about using a Qwen API key.
+
+Qwen provides AI models that can be accessed through APIs.
+
+Using different model providers helped me understand that an application can work with different LLM services depending on the API and model being used.
+
+
+5. AGENTIC AI
+-------------
+
+Agentic AI refers to AI systems that can perform tasks and take actions instead of only generating a text response.
+
+A simple AI agent can:
+
+1. Understand the user's goal.
+2. Decide what action is required.
+3. Select or use an available tool.
+4. Process the result.
+5. Provide the final response.
+
+Basic workflow:
+
+User
+  ↓
+Goal / Question
+  ↓
+AI Agent
+  ↓
+Decision
+  ↓
+Tool / API
+  ↓
+Result
+  ↓
+Final Response
+
+
+6. LANGCHAIN AGENTS
+-------------------
+
+LangChain can be used to create AI agents.
+
+An agent uses an LLM to decide what should be done based on the user's request.
+
+Tools can be connected to the agent so that it can perform specific tasks.
+
+For example, an agent could potentially use:
+
+- Calculator
+- Search API
+- Database
+- External API
+- Custom Python function
+
+
+7. MY SIMPLE AGENTIC AI PROJECT
+-------------------------------
+
+Today I created a simple Agentic AI project.
+
+The project helped me understand:
+
+- How an LLM API is connected to an application.
+- How LangChain can be used with an LLM.
+- How API keys are used.
+- How an AI agent works.
+- How an agent can decide what action to perform.
+- How tools can be connected to an AI agent.
+
+This was my first practical step toward understanding Agentic AI.
+
+
+8. WHAT I LEARNED TODAY
+-----------------------
+
+- LangChain basics
+- API keys
+- OpenAI API
+- Qwen API
+- LLM integration
+- AI agents
+- Agentic AI
+- Tools and agents
+- Building a simple Agentic AI project
+
+
+9. KEY TAKEAWAY
+---------------
+
+Today I learned that Generative AI applications can go beyond simple question-and-answer systems.
+
+With agents and tools, an AI system can understand a goal, decide what to do, use available tools, and return a useful result.
+
+Day 59 completed successfully.
